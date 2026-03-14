@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epoch-bench"
+version = "0.1.0"
+description = "EPOCH: Evaluating Progress Origins in Causal History — LLM causal reasoning benchmark"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "anthropic>=0.40",
+    "openai>=1.0",
+    "scipy>=1.10",
+    "rich>=13.0",
+    "pydantic>=2.0",
+    "google-generativeai>=0.5",
+    "pyyaml>=6.0",
+    "networkx>=3.0",
+]
+
+[project.scripts]
+epoch-bench = "epoch_bench.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
+paper = ["matplotlib>=3.7", "seaborn>=0.12"]
+
+[tool.setuptools.packages.find]
+include = ["epoch_bench*"]
+
+[tool.setuptools.package-data]
+epoch_bench = ["data/*.jsonl", "data/*.json"]
