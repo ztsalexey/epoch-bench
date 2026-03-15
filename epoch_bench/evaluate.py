@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import json
 import math
 import re
 from collections import defaultdict
+from pathlib import Path
 from statistics import mean, median, stdev
 
 from scipy.stats import kendalltau
@@ -27,6 +29,32 @@ def _normalize(text: str) -> str:
     # Remove articles.
     words = [w for w in text.split() if w not in _ARTICLES]
     return " ".join(words).strip()
+
+
+def _load_tech_aliases() -> dict[str, str]:
+    """Load tech_aliases.json and build a mapping from each alias to its canonical name."""
+    alias_file = Path(__file__).parent / "data" / "tech_aliases.json"
+    mapping: dict[str, str] = {}
+    if not alias_file.exists():
+        return mapping
+    with open(alias_file) as f:
+        raw: dict[str, list[str]] = json.load(f)
+    for canonical, aliases in raw.items():
+        canonical_norm = _normalize(canonical)
+        mapping[canonical_norm] = canonical_norm
+        for alias in aliases:
+            mapping[_normalize(alias)] = canonical_norm
+    return mapping
+
+
+# Module-level alias table: loaded once on import.
+_TECH_ALIASES: dict[str, str] = _load_tech_aliases()
+
+
+def _normalize_tech(text: str) -> str:
+    """Normalize text and resolve tech aliases to canonical names."""
+    normed = _normalize(text)
+    return _TECH_ALIASES.get(normed, normed)
 
 
 def score_chain(predicted: list[str], expected: list[str]) -> float:
@@ -87,8 +115,8 @@ def score_ripple(predicted: list[str], expected: list[str]) -> float:
     if not expected or not predicted:
         return 0.0
 
-    pred_set = {_normalize(s) for s in predicted}
-    exp_set = {_normalize(s) for s in expected}
+    pred_set = {_normalize_tech(s) for s in predicted}
+    exp_set = {_normalize_tech(s) for s in expected}
 
     tp = len(pred_set & exp_set)
     if tp == 0:

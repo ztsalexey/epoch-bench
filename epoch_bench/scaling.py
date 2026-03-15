@@ -192,7 +192,12 @@ def compute_scaling_analysis(
 
 def scaling_headline_from_values(slope: float, p_value: float, trend: str) -> str:
     """Build headline string from analysis values."""
-    verb = "closes" if trend == "closes" else "doesn't close"
+    if p_value < 0.05 and trend == "closes":
+        verb = "closes"
+    elif p_value < 0.05 and trend == "widens":
+        verb = "widens"
+    else:
+        verb = "does not significantly affect"
     return f"Scaling {verb} the reasoning gap (slope={slope:.4f}, p={p_value:.4f})"
 
 

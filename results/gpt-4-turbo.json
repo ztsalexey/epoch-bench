@@ -117,7 +117,7 @@
       "pair_id": "bridge_05",
       "model_response": "A",
       "parsed_answer": "A",
-      "expected_answer": "C",
+      "expected_answer": "B",
       "score": 0.0,
       "latency_ms": 730.0914169754833,
       "error": null
@@ -413,8 +413,8 @@
       "pair_id": "gate_27",
       "model_response": "No",
       "parsed_answer": "No",
-      "expected_answer": "Yes",
-      "score": 0.0,
+      "expected_answer": "No",
+      "score": 1.0,
       "latency_ms": 963.6997089837678,
       "error": null
     },
@@ -663,8 +663,8 @@
       "pair_id": "bridge_12",
       "model_response": "A.",
       "parsed_answer": "A",
-      "expected_answer": "D",
-      "score": 0.0,
+      "expected_answer": "A",
+      "score": 1.0,
       "latency_ms": 976.8809170345776,
       "error": null
     },
@@ -675,8 +675,8 @@
       "pair_id": "gate_30",
       "model_response": "No",
       "parsed_answer": "No",
-      "expected_answer": "Yes",
-      "score": 0.0,
+      "expected_answer": "No",
+      "score": 1.0,
       "latency_ms": 859.0517499833368,
       "error": null
     },
@@ -1194,8 +1194,8 @@
       "pair_id": "bridge_18",
       "model_response": "C",
       "parsed_answer": "C",
-      "expected_answer": "B",
-      "score": 0.0,
+      "expected_answer": "C",
+      "score": 1.0,
       "latency_ms": 950.6329160067253,
       "error": null
     },
@@ -1337,8 +1337,8 @@
       "pair_id": "bridge_19",
       "model_response": "A",
       "parsed_answer": "A",
-      "expected_answer": "C",
-      "score": 0.0,
+      "expected_answer": "A",
+      "score": 1.0,
       "latency_ms": 1239.1400830238126,
       "error": null
     },
@@ -1794,8 +1794,8 @@
       "pair_id": "bridge_23",
       "model_response": "A.",
       "parsed_answer": "A",
-      "expected_answer": "C",
-      "score": 0.0,
+      "expected_answer": "A",
+      "score": 1.0,
       "latency_ms": 1338.0331249791197,
       "error": null
     },
@@ -2631,10 +2631,7 @@
         "SSH",
         "Bitcoin"
       ],
-      "expected_answer": [
-        "physical door locks",
-        "QR codes"
-      ],
+      "expected_answer": [],
       "score": 0.0,
       "latency_ms": 712.6515840063803,
       "error": null
@@ -2739,8 +2736,8 @@
       "pair_id": "bridge_32",
       "model_response": "A",
       "parsed_answer": "A",
-      "expected_answer": "B",
-      "score": 0.0,
+      "expected_answer": "A",
+      "score": 1.0,
       "latency_ms": 1003.2683750032447,
       "error": null
     },
@@ -3069,8 +3066,8 @@
       "pair_id": "bridge_35",
       "model_response": "B",
       "parsed_answer": "B",
-      "expected_answer": "C",
-      "score": 0.0,
+      "expected_answer": "B",
+      "score": 1.0,
       "latency_ms": 895.2383330324665,
       "error": null
     },
@@ -3399,8 +3396,8 @@
       "pair_id": "bridge_38",
       "model_response": "C",
       "parsed_answer": "C",
-      "expected_answer": "B",
-      "score": 0.0,
+      "expected_answer": "C",
+      "score": 1.0,
       "latency_ms": 920.2539169928059,
       "error": null
     },
@@ -5460,15 +5457,15 @@
     },
     {
       "question_type": "GATE",
-      "factual_score": 0.75,
+      "factual_score": 0.8,
       "counterfactual_score": 0.675,
-      "reasoning_gap": 0.07499999999999996,
-      "epoch_score": 0.7050000000000001,
+      "reasoning_gap": 0.125,
+      "epoch_score": 0.7250000000000001,
       "n_pairs": 40,
-      "std_dev": 0.31045871768178035,
-      "median_score": 0.6,
-      "ci_lower": 0.6087878466016977,
-      "ci_upper": 0.8012121533983024
+      "std_dev": 0.3160249908975473,
+      "median_score": 1.0,
+      "ci_lower": 0.6270628406605177,
+      "ci_upper": 0.8229371593394825
     },
     {
       "question_type": "RIPPLE",
@@ -5484,21 +5481,21 @@
     },
     {
       "question_type": "BRIDGE",
-      "factual_score": 0.825,
-      "counterfactual_score": 0.5,
-      "reasoning_gap": 0.32499999999999996,
-      "epoch_score": 0.63,
+      "factual_score": 0.85,
+      "counterfactual_score": 0.65,
+      "reasoning_gap": 0.19999999999999996,
+      "epoch_score": 0.73,
       "n_pairs": 40,
-      "std_dev": 0.36668997594908215,
-      "median_score": 0.5,
-      "ci_lower": 0.5163615991231567,
-      "ci_upper": 0.7436384008768433
+      "std_dev": 0.35820063136138147,
+      "median_score": 1.0,
+      "ci_lower": 0.6189924742675941,
+      "ci_upper": 0.8410075257324059
     }
   ],
-  "overall_factual": 0.8658432539682539,
-  "overall_counterfactual": 0.5638095238095238,
-  "overall_reasoning_gap": 0.30203373015873014,
-  "overall_epoch_score": 0.6846230158730159,
+  "overall_factual": 0.884593253968254,
+  "overall_counterfactual": 0.6013095238095238,
+  "overall_reasoning_gap": 0.2832837301587301,
+  "overall_epoch_score": 0.7146230158730159,
   "evaluation_duration_seconds": 75.55,
   "total_questions": 320,
   "failed_questions": 0

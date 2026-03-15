@@ -201,3 +201,45 @@ def contamination_summary(profile: ContaminationProfile) -> str:
     )
 
     return "\n".join(lines)
+
+
+def difficulty_adjusted_contamination(
+    results: list[BenchmarkResult],
+    questions: list[Question],
+) -> dict[str, float]:
+    """Disentangle contamination from inherent CF difficulty.
+
+    Uses the cross-model mean CF score per pair as a difficulty proxy.
+    A pair where ALL models score low on CF is hard, not contaminated.
+    A pair where one model has a large gap but others don't suggests
+    model-specific contamination.
+
+    Returns per-model adjusted contamination index.
+    """
+    q_map = {q.id: q for q in questions}
+
+    # Compute per-pair mean CF score across all models (difficulty proxy)
+    pair_cf_scores: dict[str, list[float]] = defaultdict(list)
+    for result in results:
+        for r in result.results:
+            if r.variant == "counterfactual":
+                pair_cf_scores[r.pair_id].append(r.score)
+
+    pair_difficulty = {
+        pid: 1.0 - mean(scores) for pid, scores in pair_cf_scores.items()
+    }  # higher = harder
+
+    # For each model, compute contamination adjusted for difficulty
+    adjusted = {}
+    for result in results:
+        pairs = compute_pair_contamination(result, questions)
+        # Adjusted signal = raw signal - cross-model difficulty
+        adj_signals = []
+        for p in pairs:
+            difficulty = pair_difficulty.get(p.pair_id, 0.0)
+            # If the pair is universally hard, discount the signal
+            adj_signal = p.contamination_signal - difficulty
+            adj_signals.append(max(adj_signal, 0.0))
+        adjusted[result.model] = mean(adj_signals) if adj_signals else 0.0
+
+    return adjusted

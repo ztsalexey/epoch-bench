@@ -7,7 +7,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from statistics import mean, stdev
 
-from scipy.stats import pearsonr, spearmanr, ttest_rel, wilcoxon
+from scipy.stats import pearsonr, spearmanr, t as t_dist, ttest_rel, wilcoxon
 
 from epoch_bench.schema import BenchmarkResult, Question
 
@@ -176,7 +176,8 @@ def _ci_from_scores(scores: list[float]) -> tuple[float, float, float]:
         return m, m, m
     sd = stdev(scores)
     se = sd / math.sqrt(len(scores))
-    return m, m - 1.96 * se, m + 1.96 * se
+    t_val = t_dist.ppf(0.975, df=len(scores) - 1)
+    return m, m - t_val * se, m + t_val * se
 
 
 def difficulty_stratified(
@@ -303,6 +304,89 @@ def weight_sensitivity(
         rankings=rankings,
         kendalls_w=w,
     )
+
+
+@dataclass
+class BaselineComparison:
+    """Compares model CF performance against naive copy-factual baseline."""
+
+    question_type: str
+    model_cf_score: float
+    baseline_cf_score: float  # score if CF answer = factual answer
+    model_beats_baseline: bool
+    margin: float  # model_cf - baseline_cf
+
+
+def copy_factual_baseline(
+    result: BenchmarkResult,
+    questions: list[Question],
+) -> list[BaselineComparison]:
+    """Compute what a naive 'copy factual answer to CF' strategy would score.
+
+    This establishes a lower bound: if a model doesn't beat this baseline,
+    its CF performance may just reflect factual knowledge leaking through.
+    """
+    from epoch_bench.evaluate import score_chain, score_gate, score_ripple, score_bridge
+
+    q_map = {q.id: q for q in questions}
+
+    # Group questions by pair
+    pair_questions: dict[str, dict[str, Question]] = {}
+    for q in questions:
+        pair_questions.setdefault(q.pair_id, {})[q.variant] = q
+
+    # Group results by pair and type
+    pair_results: dict[str, dict[str, float]] = {}
+    pair_types: dict[str, str] = {}
+    for r in result.results:
+        pair_results.setdefault(r.pair_id, {})[r.variant] = r.score
+        pair_types[r.pair_id] = r.question_type.value
+
+    # For each pair: score the factual answer against the CF expected answer
+    type_model_cf: dict[str, list[float]] = defaultdict(list)
+    type_baseline_cf: dict[str, list[float]] = defaultdict(list)
+
+    for pair_id, pq in pair_questions.items():
+        if "factual" not in pq or "counterfactual" not in pq:
+            continue
+        fq = pq["factual"]
+        cfq = pq["counterfactual"]
+        qt = fq.type.value
+
+        # Model's actual CF score
+        model_cf = pair_results.get(pair_id, {}).get("counterfactual", 0.0)
+        type_model_cf[qt].append(model_cf)
+
+        # Baseline: score factual answer against CF expected answer
+        if qt == "CHAIN" and isinstance(fq.answer, list) and isinstance(cfq.answer, list):
+            baseline = score_chain(fq.answer, cfq.answer)
+        elif qt == "GATE":
+            baseline = score_gate(str(fq.answer), str(cfq.answer))
+        elif qt == "RIPPLE" and isinstance(fq.answer, list) and isinstance(cfq.answer, list):
+            baseline = score_ripple(fq.answer, cfq.answer)
+        elif qt == "BRIDGE":
+            baseline = score_bridge(str(fq.answer), str(cfq.answer))
+        else:
+            baseline = 0.0
+        type_baseline_cf[qt].append(baseline)
+
+    comparisons = []
+    for qt in sorted(type_model_cf.keys()):
+        model_scores = type_model_cf[qt]
+        baseline_scores = type_baseline_cf[qt]
+        m_cf = mean(model_scores) if model_scores else 0.0
+        b_cf = mean(baseline_scores) if baseline_scores else 0.0
+        comparisons.append(
+            BaselineComparison(
+                question_type=qt,
+                model_cf_score=m_cf,
+                baseline_cf_score=b_cf,
+                model_beats_baseline=m_cf > b_cf + 0.01,
+                margin=m_cf - b_cf,
+            )
+        )
+
+    return comparisons
 
 
 def item_discrimination(
