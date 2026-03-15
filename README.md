@@ -6,7 +6,7 @@ A benchmark for testing LLM causal reasoning about technology dependencies. Ever
 
 ## Leaderboard
 
-320 questions, 12 models. Ranked by EPOCH Score (0.4 × Factual + 0.6 × Counterfactual).
+340 questions (170 pairs), 12 models. Ranked by EPOCH Score (0.4 × Factual + 0.6 × Counterfactual).
 
 | # | Model | EPOCH | Factual | CF | Gap |
 |---|-------|------:|--------:|---:|----:|
@@ -55,7 +55,7 @@ A high Reasoning Gap means the model scores well on real-world facts but poorly 
 
 **RIPPLE F1 asymmetry:** CF RIPPLE answers average 1.4 items vs 3.5 for factual. Models over-predict (listing factual-world answers instead of reasoning about the alternative), resulting in low precision.
 
-**GATE flip pattern:** 90% of GATE pairs flip the answer between variants. A model that memorizes factual answers and flips would score 90% on CF. Despite this, models show nuanced patterns — 7 of 12 score better on CF GATE, suggesting the alternative-world framing genuinely aids prerequisite reasoning.
+**GATE flip pattern:** 72% of GATE pairs flip the answer between variants (reduced from 90% with the addition of 10 non-flipping pairs). Models show nuanced patterns — 7 of 12 score better on CF GATE, suggesting the alternative-world framing genuinely aids prerequisite reasoning.
 
 ## Setup
 
@@ -98,12 +98,14 @@ epoch-bench figures results/*.json --output-dir figures/
 
 ## Dataset
 
-320 hand-crafted questions across 4 JSONL files in `epoch_bench/data/`:
+340 hand-crafted questions across 4 JSONL files in `epoch_bench/data/`:
 
-- `chain.jsonl` — 40 factual/counterfactual pairs (80 questions)
-- `gate.jsonl` — 40 pairs (80 questions)
+- `chain.jsonl` — 40 factual/counterfactual pairs (80 questions, 20 with unique CF item sets)
+- `gate.jsonl` — 50 pairs (100 questions, 14 non-flipping pairs)
 - `ripple.jsonl` — 40 pairs (80 questions)
 - `bridge.jsonl` — 40 pairs (80 questions)
+
+Questions are split into **open** (260, published) and **closed** (80, held back) test sets to prevent future training contamination. Use `--split open` to run only the public set.
 
 ## Novel Features
 
