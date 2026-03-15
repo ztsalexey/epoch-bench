@@ -127,6 +127,25 @@ def score_ripple(predicted: list[str], expected: list[str]) -> float:
     return 2.0 * precision * recall / (precision + recall)
 
 
+def score_ripple_jaccard(predicted: list[str], expected: list[str]) -> float:
+    """Jaccard similarity — length-normalized alternative to F1 for RIPPLE.
+
+    Jaccard = |intersection| / |union|, which is symmetric and doesn't
+    penalize predictions of different lengths as harshly as F1.
+    """
+    if not expected and not predicted:
+        return 1.0
+    if not expected or not predicted:
+        return 0.0
+
+    pred_set = {_normalize_tech(s) for s in predicted}
+    exp_set = {_normalize_tech(s) for s in expected}
+
+    intersection = len(pred_set & exp_set)
+    union = len(pred_set | exp_set)
+    return intersection / union if union > 0 else 0.0
+
+
 def score_question(question_type: str, predicted, expected) -> float:
     """Dispatch to the right scorer based on question type."""
     qt = QuestionType(question_type)

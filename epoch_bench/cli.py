@@ -58,6 +58,7 @@ def main() -> None:
 @click.option("--verbose", is_flag=True, help="Show per-question errors and details.")
 @click.option("--temperature", type=float, default=None, help="Model temperature (default: 0.0).")
 @click.option("--max-tokens", type=int, default=None, help="Max tokens per response (default: 2048).")
+@click.option("--split", type=click.Choice(["open", "closed", "all"]), default="all", show_default=True, help="Test set split to run.")
 def run(
     provider: str,
     model: str,
@@ -68,6 +69,7 @@ def run(
     verbose: bool,
     temperature: float | None,
     max_tokens: int | None,
+    split: str,
 ) -> None:
     """Run the EPOCH benchmark against a model."""
     model_provider = get_provider(provider, model)

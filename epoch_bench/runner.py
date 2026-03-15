@@ -26,8 +26,16 @@ QUESTION_FILES = {
 }
 
 
-def load_questions(types: list[QuestionType] | None = None) -> list[Question]:
-    """Load questions from JSONL files."""
+def load_questions(
+    types: list[QuestionType] | None = None,
+    split: str | None = None,
+) -> list[Question]:
+    """Load questions from JSONL files.
+
+    Args:
+        types: Filter by question type. None = all types.
+        split: Filter by test set split ('open' or 'closed'). None = all.
+    """
     if types is None:
         types = list(QuestionType)
 
@@ -41,7 +49,10 @@ def load_questions(types: list[QuestionType] | None = None) -> list[Question]:
                 line = line.strip()
                 if not line:
                     continue
-                questions.append(Question.model_validate_json(line))
+                q = Question.model_validate_json(line)
+                if split is not None and q.split != split:
+                    continue
+                questions.append(q)
     return questions
 
 

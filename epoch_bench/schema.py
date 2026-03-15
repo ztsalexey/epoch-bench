@@ -40,6 +40,9 @@ class Question(BaseModel):
     source: str | None = Field(
         default=None, description="Source citation for the question"
     )
+    split: Literal["open", "closed"] | None = Field(
+        default=None, description="Test set split: 'open' (public) or 'closed' (held back)"
+    )
 
 
 class Result(BaseModel):
