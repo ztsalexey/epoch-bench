@@ -35,8 +35,6 @@ htmlcov/
 .tox/
 
 # Generated outputs
-figures/
-*.png
 tech_graph.json
 
 # Pip artifacts
