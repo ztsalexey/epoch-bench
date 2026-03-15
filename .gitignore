@@ -36,6 +36,3 @@ htmlcov/
 
 # Generated outputs
 tech_graph.json
-
-# Pip artifacts
-=3.0

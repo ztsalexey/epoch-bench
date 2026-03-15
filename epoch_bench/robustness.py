@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from statistics import mean, stdev
 
 from epoch_bench.schema import Question, QuestionType

@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 from collections import defaultdict
-from dataclasses import dataclass, field
-from statistics import mean, stdev
+from dataclasses import dataclass
+from statistics import mean
 
 from epoch_bench.analysis import GapSignificance, gap_significance
 from epoch_bench.schema import BenchmarkResult, Question

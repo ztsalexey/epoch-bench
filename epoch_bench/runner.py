@@ -153,10 +153,11 @@ async def run_benchmark(
     verbose: bool = False,
     temperature: float | None = None,
     max_tokens: int | None = None,
+    split: str | None = None,
 ) -> BenchmarkResult:
     """Run the full benchmark."""
     console = Console()
-    questions = load_questions(types)
+    questions = load_questions(types, split=split)
 
     if not questions:
         console.print("[red]No questions found. Check data directory.[/red]")

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from statistics import mean
 
 from scipy.stats import linregress
@@ -13,24 +13,22 @@ from epoch_bench.schema import BenchmarkResult, Question
 
 DEFAULT_FAMILIES: dict[str, list[str]] = {
     "anthropic": [
-        "claude-3-5-haiku-latest",
+        "claude-haiku-4-5-20251001",
         "claude-sonnet-4-6",
         "claude-opus-4-6",
     ],
     "openai": [
+        "gpt-3.5-turbo",
         "gpt-4o-mini",
+        "gpt-4.1-nano",
         "gpt-4o",
-        "o1-mini",
-        "o1",
+        "gpt-4-turbo",
+        "gpt-4.1",
+        "gpt-4.1-mini",
     ],
-    "gemini": [
-        "gemini-1.5-flash",
-        "gemini-1.5-pro",
-        "gemini-2.0-flash",
-    ],
-    "deepseek": [
-        "deepseek-chat",
-        "deepseek-reasoner",
+    "openai_reasoning": [
+        "o3-mini",
+        "o4-mini",
     ],
 }
 
@@ -93,8 +91,10 @@ def _infer_family(model: str) -> str | None:
     lower = model.lower()
     if "claude" in lower:
         return "anthropic"
-    if "gpt" in lower or lower.startswith("o1") or lower.startswith("o3"):
+    if "gpt" in lower:
         return "openai"
+    if lower.startswith("o1") or lower.startswith("o3") or lower.startswith("o4"):
+        return "openai_reasoning"
     if "gemini" in lower:
         return "gemini"
     if "deepseek" in lower:

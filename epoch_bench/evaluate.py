@@ -9,7 +9,7 @@ from collections import defaultdict
 from pathlib import Path
 from statistics import mean, median, stdev
 
-from scipy.stats import kendalltau
+from scipy.stats import kendalltau, t as t_dist
 
 from epoch_bench.schema import QuestionType, Result, TypeScore
 
@@ -201,8 +201,9 @@ def compute_type_scores(results: list[Result]) -> list[TypeScore]:
         n = len(pair_epoch_scores)
         if n >= 2 and std > 0:
             se = std / math.sqrt(n)
-            ci_lower = epoch_score - 1.96 * se
-            ci_upper = epoch_score + 1.96 * se
+            t_val = t_dist.ppf(0.975, df=n - 1)
+            ci_lower = epoch_score - t_val * se
+            ci_upper = epoch_score + t_val * se
         else:
             ci_lower = epoch_score
             ci_upper = epoch_score
