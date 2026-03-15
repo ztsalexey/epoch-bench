@@ -262,19 +262,28 @@ def save_all_figures(
 
 def contamination_heatmap(
     profiles: list,
+    top_n: int = 15,
     ax: plt.Axes | None = None,
 ) -> plt.Figure:
-    """Heatmap: models x domains showing contamination index."""
+    """Heatmap: models x top-N domains showing contamination index."""
+    # Rank domains by mean absolute contamination across models, keep top N
+    from collections import defaultdict
+    from statistics import mean as _mean
+
+    domain_scores: dict[str, list[float]] = defaultdict(list)
+    for p in profiles:
+        for d, v in p.per_domain.items():
+            domain_scores[d].append(abs(v))
+    ranked = sorted(domain_scores.items(), key=lambda x: _mean(x[1]), reverse=True)
+    # Filter out domains with too few data points (< 3 models reporting)
+    ranked = [(d, scores) for d, scores in ranked if len(scores) >= len(profiles) // 2]
+    domains = [d for d, _ in ranked[:top_n]]
+
     if ax is None:
-        fig, ax = plt.subplots(figsize=(12, max(4, len(profiles) * 0.8)))
+        fig, ax = plt.subplots(figsize=(max(10, len(domains) * 0.7), max(4, len(profiles) * 0.7)))
     else:
         fig = ax.get_figure()
 
-    # Collect all domains
-    all_domains: set[str] = set()
-    for p in profiles:
-        all_domains.update(p.per_domain.keys())
-    domains = sorted(all_domains)
     models = [p.model for p in profiles]
 
     data = np.zeros((len(models), len(domains)))
@@ -286,15 +295,19 @@ def contamination_heatmap(
         data,
         ax=ax,
         annot=True,
-        fmt=".1f",
+        fmt=".0f",
+        annot_kws={"size": 9},
         xticklabels=domains,
         yticklabels=models,
         cmap="RdYlGn_r",
         center=0,
+        vmin=-50,
+        vmax=100,
         cbar_kws={"label": "Contamination Signal (%)"},
     )
-    ax.set_title("Contamination by Domain")
-    ax.set_xticklabels(domains, rotation=45, ha="right")
+    ax.set_title(f"Contamination by Domain (top {len(domains)})")
+    ax.set_xticklabels(domains, rotation=45, ha="right", fontsize=9)
+    ax.set_yticklabels(models, fontsize=9)
     fig.tight_layout()
     return fig
 
@@ -359,7 +372,7 @@ def scaling_gap_plot(
 ) -> plt.Figure:
     """Scatter + regression line: capability rank vs reasoning gap."""
     if ax is None:
-        fig, ax = plt.subplots(figsize=(8, 5))
+        fig, ax = plt.subplots(figsize=(10, 6))
     else:
         fig = ax.get_figure()
 
@@ -368,8 +381,46 @@ def scaling_gap_plot(
     labels = [e.model for e in analysis.entries]
 
     ax.scatter(ranks, gaps, s=80, zorder=3)
+
+    # Label placement with collision avoidance
+    annotations = []
     for r, g, label in zip(ranks, gaps, labels):
-        ax.annotate(label, (r, g), textcoords="offset points", xytext=(5, 5), fontsize=8)
+        annotations.append((r, g, label))
+
+    # Sort by y-position to handle close points
+    annotations.sort(key=lambda x: (-x[1], x[0]))
+
+    placed_boxes: list[tuple[float, float, float, float]] = []  # (x, y, xo, yo)
+    candidate_offsets = [
+        (7, 8), (7, -16), (-7, 8), (-7, -16),
+        (7, 20), (7, -28), (-7, 20), (-7, -28),
+        (20, 0), (-20, 0),
+    ]
+
+    for r, g, label in annotations:
+        best = candidate_offsets[0]
+        for xo, yo in candidate_offsets:
+            # Check against all placed labels using offset-point scale
+            ok = True
+            for pr, pg, pxo, pyo in placed_boxes:
+                # Estimate if labels would overlap: same offset-point space
+                dx = abs((r - pr) * 12 + (xo - pxo))  # scale data to ~offset points
+                dy = abs((g - pg) * 3 + (yo - pyo))
+                if dx < 55 and dy < 14:
+                    ok = False
+                    break
+            if ok:
+                best = (xo, yo)
+                break
+
+        ha = "left" if best[0] >= 0 else "right"
+        ax.annotate(
+            label, (r, g),
+            textcoords="offset points", xytext=best,
+            fontsize=7.5, ha=ha,
+            arrowprops={"arrowstyle": "-", "color": "gray", "alpha": 0.3} if abs(best[0]) > 15 or abs(best[1]) > 20 else None,
+        )
+        placed_boxes.append((r, g, best[0], best[1]))
 
     # Regression line
     if len(ranks) >= 2:
@@ -391,21 +442,28 @@ def scaling_family_lines(
 ) -> plt.Figure:
     """Per-family line plot of gap vs capability within each family."""
     if ax is None:
-        fig, ax = plt.subplots(figsize=(10, 6))
+        fig, ax = plt.subplots(figsize=(12, 6))
     else:
         fig = ax.get_figure()
+
+    colors = {"anthropic": "#E74C3C", "openai": "#3498DB", "gemini": "#2ECC71", "deepseek": "#9B59B6"}
 
     for fa in analysis.per_family:
         ranks = list(range(len(fa.models)))
         gaps = [g * 100 for g in fa.gaps]
-        ax.plot(ranks, gaps, marker="o", label=f"{fa.family} ({fa.trend})", linewidth=2)
-        for r, g, m in zip(ranks, gaps, fa.models):
-            ax.annotate(m, (r, g), textcoords="offset points", xytext=(5, 5), fontsize=7)
+        color = colors.get(fa.family, None)
+        ax.plot(ranks, gaps, marker="o", label=f"{fa.family} ({fa.trend})",
+                linewidth=2, markersize=8, color=color)
+        # Alternate label positions to avoid overlap
+        for i, (r, g, m) in enumerate(zip(ranks, gaps, fa.models)):
+            y_off = 8 if i % 2 == 0 else -14
+            ax.annotate(m, (r, g), textcoords="offset points",
+                        xytext=(0, y_off), fontsize=7, ha="center")
 
     ax.set_xlabel("Capability Rank (within family)")
     ax.set_ylabel("Reasoning Gap (%)")
     ax.set_title("Scaling by Model Family")
-    ax.legend()
+    ax.legend(loc="upper right")
     fig.tight_layout()
     return fig
 
