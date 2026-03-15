@@ -1,0 +1,5730 @@
+{
+  "model": "gpt-4o",
+  "provider": "OpenAIProvider",
+  "results": [
+    {
+      "question_id": "gate_f_21",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_21",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 1459.7224169992842,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_20",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_20",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 1622.695708007086,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_34",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_34",
+      "model_response": "space travel  \nICBMs  \nsatellite launches",
+      "parsed_answer": [
+        "space travel",
+        "ICBMs",
+        "satellite launches"
+      ],
+      "expected_answer": [
+        "space travel",
+        "ICBMs",
+        "satellite launches"
+      ],
+      "score": 1.0,
+      "latency_ms": 1623.8308749743737,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_33",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_33",
+      "model_response": "- Ocean navigation\n- Cartography\n- Surveying",
+      "parsed_answer": [
+        "Ocean navigation",
+        "Cartography",
+        "Surveying"
+      ],
+      "expected_answer": [
+        "surveying"
+      ],
+      "score": 0.5,
+      "latency_ms": 1661.1273750313558,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_21",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_21",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 461.35158301331103,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_02",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_02",
+      "model_response": "Transistor  \nUNIX  \nGCC  \nGNU C Library  \nLinux kernel",
+      "parsed_answer": [
+        "Transistor",
+        "UNIX",
+        "GCC",
+        "GNU C Library",
+        "Linux kernel"
+      ],
+      "expected_answer": [
+        "Transistor",
+        "UNIX",
+        "GCC",
+        "GNU C Library",
+        "Linux kernel"
+      ],
+      "score": 1.0,
+      "latency_ms": 2029.112750024069,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_01",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_01",
+      "model_response": "Netscape Navigator  \nJavaScript  \nECMAScript specification  \nReact",
+      "parsed_answer": [
+        "Netscape Navigator",
+        "JavaScript",
+        "ECMAScript specification",
+        "React"
+      ],
+      "expected_answer": [
+        "ECMAScript specification",
+        "JavaScript",
+        "Netscape Navigator",
+        "React"
+      ],
+      "score": 0.5,
+      "latency_ms": 523.255167005118,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_22",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_22",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 521.9267919892445,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_34",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_34",
+      "model_response": "space travel  \nsatellite launches",
+      "parsed_answer": [
+        "space travel",
+        "satellite launches"
+      ],
+      "expected_answer": [
+        "ICBMs"
+      ],
+      "score": 0.0,
+      "latency_ms": 1049.483208975289,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_35",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_35",
+      "model_response": "commercial aviation  \naerospace industry  \nmilitary aviation  \nhelicopters  \nspace shuttles",
+      "parsed_answer": [
+        "commercial aviation",
+        "aerospace industry",
+        "military aviation",
+        "helicopters",
+        "space shuttles"
+      ],
+      "expected_answer": [
+        "helicopters"
+      ],
+      "score": 0.33333333333333337,
+      "latency_ms": 615.3932499582879,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_01",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_01",
+      "model_response": "Netscape Navigator  \nJavaScript  \nECMAScript specification  \nReact",
+      "parsed_answer": [
+        "Netscape Navigator",
+        "JavaScript",
+        "ECMAScript specification",
+        "React"
+      ],
+      "expected_answer": [
+        "Netscape Navigator",
+        "JavaScript",
+        "ECMAScript specification",
+        "React"
+      ],
+      "score": 1.0,
+      "latency_ms": 1089.049750007689,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_23",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_23",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 520.1260419562459,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_36",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_36",
+      "model_response": "synthetic ammonia  \nchemical weapons (WWI)  \nworld food supply",
+      "parsed_answer": [
+        "synthetic ammonia",
+        "chemical weapons (WWI)",
+        "world food supply"
+      ],
+      "expected_answer": [
+        "synthetic ammonia",
+        "chemical weapons (WWI)",
+        "world food supply",
+        "nylon"
+      ],
+      "score": 0.8571428571428571,
+      "latency_ms": 489.27333403844386,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_35",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_35",
+      "model_response": "commercial aviation  \naerospace industry  \nmilitary aviation  \nhelicopters  \nspace shuttles",
+      "parsed_answer": [
+        "commercial aviation",
+        "aerospace industry",
+        "military aviation",
+        "helicopters",
+        "space shuttles"
+      ],
+      "expected_answer": [
+        "commercial aviation",
+        "aerospace industry",
+        "military aviation",
+        "helicopters",
+        "space shuttles"
+      ],
+      "score": 1.0,
+      "latency_ms": 1416.5892080054618,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_22",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_22",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 1254.985667008441,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_23",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_23",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 512.1100410469808,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_36",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_36",
+      "model_response": "synthetic ammonia  \nchemical weapons (WWI)  \nworld food supply",
+      "parsed_answer": [
+        "synthetic ammonia",
+        "chemical weapons (WWI)",
+        "world food supply"
+      ],
+      "expected_answer": [
+        "nylon"
+      ],
+      "score": 0.0,
+      "latency_ms": 549.8556250240654,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_37",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_37",
+      "model_response": "- Safe milk\n- Beer brewing\n- Wine production",
+      "parsed_answer": [
+        "Safe milk",
+        "Beer brewing",
+        "Wine production"
+      ],
+      "expected_answer": [
+        "safe milk",
+        "beer brewing",
+        "canned food"
+      ],
+      "score": 0.6666666666666666,
+      "latency_ms": 467.6541250082664,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_37",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_37",
+      "model_response": "- Safe milk\n- Beer brewing\n- Wine production\n- Yogurt\n- Cheese",
+      "parsed_answer": [
+        "Safe milk",
+        "Beer brewing",
+        "Wine production",
+        "Yogurt",
+        "Cheese"
+      ],
+      "expected_answer": [
+        "canned food"
+      ],
+      "score": 0.0,
+      "latency_ms": 588.0434160353616,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_24",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_24",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 854.6830830164254,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_38",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_38",
+      "model_response": "- Row-based agriculture",
+      "parsed_answer": [
+        "- Row-based agriculture"
+      ],
+      "expected_answer": [
+        "row-based agriculture",
+        "combine harvesters",
+        "precision agriculture"
+      ],
+      "score": 0.5,
+      "latency_ms": 509.27529198816046,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_24",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_24",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 1052.6369999861345,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_25",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_25",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 405.13849997660145,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_02",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_02",
+      "model_response": "Relay computing  \nUNIX  \nLinux kernel  \nGCC  \nGNU C Library",
+      "parsed_answer": [
+        "Relay computing",
+        "UNIX",
+        "Linux kernel",
+        "GCC",
+        "GNU C Library"
+      ],
+      "expected_answer": [
+        "Relay computing",
+        "UNIX",
+        "GCC",
+        "GNU C Library",
+        "Linux kernel"
+      ],
+      "score": 0.8,
+      "latency_ms": 557.4114589835517,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_25",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_25",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 1038.3824580349028,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_03",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_03",
+      "model_response": "relational model  \nSQL language  \nACID transactions  \nPostgreSQL  \nAmazon RDS",
+      "parsed_answer": [
+        "relational model",
+        "SQL language",
+        "ACID transactions",
+        "PostgreSQL",
+        "Amazon RDS"
+      ],
+      "expected_answer": [
+        "relational model",
+        "SQL language",
+        "ACID transactions",
+        "PostgreSQL",
+        "Amazon RDS"
+      ],
+      "score": 1.0,
+      "latency_ms": 446.91941601922736,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_38",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_38",
+      "model_response": "- Row-based agriculture\n- Broadcast sowing\n- Precision agriculture",
+      "parsed_answer": [
+        "Row-based agriculture",
+        "Broadcast sowing",
+        "Precision agriculture"
+      ],
+      "expected_answer": [
+        "combine harvesters"
+      ],
+      "score": 0.0,
+      "latency_ms": 583.6859999690205,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_39",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_39",
+      "model_response": "frozen food industry  \nair conditioning  \nfood transport  \nice cream",
+      "parsed_answer": [
+        "frozen food industry",
+        "air conditioning",
+        "food transport",
+        "ice cream"
+      ],
+      "expected_answer": [
+        "frozen food industry",
+        "air conditioning",
+        "food transport",
+        "ice cream"
+      ],
+      "score": 1.0,
+      "latency_ms": 621.3722919928841,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_39",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_39",
+      "model_response": "frozen food industry  \nfood transport  \nice cream",
+      "parsed_answer": [
+        "frozen food industry",
+        "food transport",
+        "ice cream"
+      ],
+      "expected_answer": [
+        "air conditioning",
+        "ice cream"
+      ],
+      "score": 0.4,
+      "latency_ms": 426.08725000172853,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_26",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_26",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "No",
+      "score": 0.0,
+      "latency_ms": 758.81545903394,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_26",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_26",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "Yes",
+      "score": 0.0,
+      "latency_ms": 1006.5140830120072,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_27",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_27",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "No",
+      "score": 0.0,
+      "latency_ms": 501.07574998401105,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_03",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_03",
+      "model_response": "Hierarchical databases  \nACID transactions  \nAmazon RDS",
+      "parsed_answer": [
+        "Hierarchical databases",
+        "ACID transactions",
+        "Amazon RDS"
+      ],
+      "expected_answer": [
+        "ACID transactions",
+        "relational model",
+        "SQL language",
+        "PostgreSQL",
+        "Amazon RDS"
+      ],
+      "score": 0.0,
+      "latency_ms": 1342.1072080382146,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_04",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_04",
+      "model_response": "ARPANET  \nTCP/IP  \nHTTP  \nTLS  \nHTTPS",
+      "parsed_answer": [
+        "ARPANET",
+        "TCP/IP",
+        "HTTP",
+        "TLS",
+        "HTTPS"
+      ],
+      "expected_answer": [
+        "ARPANET",
+        "TCP/IP",
+        "HTTP",
+        "TLS",
+        "HTTPS"
+      ],
+      "score": 1.0,
+      "latency_ms": 877.414292015601,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_04",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_04",
+      "model_response": "circuit-switched network  \nTCP/IP  \nHTTP  \nTLS  \nHTTPS",
+      "parsed_answer": [
+        "circuit-switched network",
+        "TCP/IP",
+        "HTTP",
+        "TLS",
+        "HTTPS"
+      ],
+      "expected_answer": [
+        "circuit-switched network",
+        "TCP/IP",
+        "HTTP",
+        "TLS",
+        "HTTPS"
+      ],
+      "score": 1.0,
+      "latency_ms": 522.7336669922806,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_27",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_27",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 513.5171249858104,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_40",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_40",
+      "model_response": "- Modern wheat varieties\n- Corn yields\n- GMO crops\n- The Green Revolution\n- Organic farming",
+      "parsed_answer": [
+        "Modern wheat varieties",
+        "Corn yields",
+        "GMO crops",
+        "The Green Revolution",
+        "Organic farming"
+      ],
+      "expected_answer": [
+        "modern wheat varieties",
+        "corn yields",
+        "GMO crops",
+        "the Green Revolution"
+      ],
+      "score": 0.888888888888889,
+      "latency_ms": 806.07345799217,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_40",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_40",
+      "model_response": "- Modern wheat varieties\n- Corn yields\n- The Green Revolution\n- Organic farming",
+      "parsed_answer": [
+        "Modern wheat varieties",
+        "Corn yields",
+        "The Green Revolution",
+        "Organic farming"
+      ],
+      "expected_answer": [
+        "modern wheat varieties",
+        "corn yields"
+      ],
+      "score": 0.6666666666666666,
+      "latency_ms": 485.9484169865027,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_05",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_05",
+      "model_response": "ARM processor  \nObjective-C  \niPhone  \niOS App Store  \nSwift",
+      "parsed_answer": [
+        "ARM processor",
+        "Objective-C",
+        "iPhone",
+        "iOS App Store",
+        "Swift"
+      ],
+      "expected_answer": [
+        "ARM processor",
+        "Objective-C",
+        "iPhone",
+        "iOS App Store",
+        "Swift"
+      ],
+      "score": 1.0,
+      "latency_ms": 452.83929200377315,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_28",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_28",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 433.1815000041388,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_05",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_05",
+      "model_response": "ARM processor  \nObjective-C  \niPhone  \niOS App Store  \nSwift",
+      "parsed_answer": [
+        "ARM processor",
+        "Objective-C",
+        "iPhone",
+        "iOS App Store",
+        "Swift"
+      ],
+      "expected_answer": [
+        "iPhone",
+        "iOS App Store",
+        "Objective-C",
+        "ARM processor",
+        "Swift"
+      ],
+      "score": 0.5,
+      "latency_ms": 518.0743340170011,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_28",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_28",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 490.98087497986853,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_01",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_01",
+      "model_response": "A.",
+      "parsed_answer": "A",
+      "expected_answer": "D",
+      "score": 0.0,
+      "latency_ms": 483.9562910492532,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_01",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_01",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 799.9537920113653,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_06",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_06",
+      "model_response": "perceptron  \nbackpropagation algorithm  \nword embeddings  \nTransformer architecture  \nGPT-3",
+      "parsed_answer": [
+        "perceptron",
+        "backpropagation algorithm",
+        "word embeddings",
+        "Transformer architecture",
+        "GPT-3"
+      ],
+      "expected_answer": [
+        "perceptron",
+        "backpropagation algorithm",
+        "word embeddings",
+        "Transformer architecture",
+        "GPT-3"
+      ],
+      "score": 1.0,
+      "latency_ms": 552.0774170290679,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_29",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_29",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 518.586750025861,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_06",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_06",
+      "model_response": "symbolic logic unit  \nbackpropagation algorithm  \nword embeddings  \nTransformer architecture  \nGPT-3",
+      "parsed_answer": [
+        "symbolic logic unit",
+        "backpropagation algorithm",
+        "word embeddings",
+        "Transformer architecture",
+        "GPT-3"
+      ],
+      "expected_answer": [
+        "symbolic logic unit",
+        "backpropagation algorithm",
+        "word embeddings",
+        "Transformer architecture",
+        "GPT-3"
+      ],
+      "score": 1.0,
+      "latency_ms": 467.0794999692589,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_02",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_02",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "D",
+      "score": 0.0,
+      "latency_ms": 415.49737501190975,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_29",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_29",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 478.8098330027424,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_02",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_02",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 814.1563340323046,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_07",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_07",
+      "model_response": "Assembly language  \nC language  \nJava  \nJVM bytecode  \nTypeScript",
+      "parsed_answer": [
+        "Assembly language",
+        "C language",
+        "Java",
+        "JVM bytecode",
+        "TypeScript"
+      ],
+      "expected_answer": [
+        "assembly language",
+        "C language",
+        "JVM bytecode",
+        "Java",
+        "TypeScript"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 550.2464160090312,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_30",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_30",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 480.1598750054836,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_07",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_07",
+      "model_response": "assembly language  \nPascal  \nJVM bytecode  \nJava  \nTypeScript",
+      "parsed_answer": [
+        "assembly language",
+        "Pascal",
+        "JVM bytecode",
+        "Java",
+        "TypeScript"
+      ],
+      "expected_answer": [
+        "assembly language",
+        "JVM bytecode",
+        "Java",
+        "C language",
+        "TypeScript"
+      ],
+      "score": 0.0,
+      "latency_ms": 502.9723329935223,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_03",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_03",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 845.106249966193,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_03",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_03",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 499.2582089616917,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_30",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_30",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "No",
+      "score": 0.0,
+      "latency_ms": 527.8352909954265,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_08",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_08",
+      "model_response": "public-key cryptography concept  \nRSA algorithm  \nMerkle tree  \nSHA-256  \nBitcoin",
+      "parsed_answer": [
+        "public-key cryptography concept",
+        "RSA algorithm",
+        "Merkle tree",
+        "SHA-256",
+        "Bitcoin"
+      ],
+      "expected_answer": [
+        "public-key cryptography concept",
+        "RSA algorithm",
+        "Merkle tree",
+        "SHA-256",
+        "Bitcoin"
+      ],
+      "score": 1.0,
+      "latency_ms": 467.84041600767523,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_04",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_04",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 439.57958300597966,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_04",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_04",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 524.0162089467049,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_31",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_31",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 841.5762080112472,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_31",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_31",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 523.3954159775749,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_08",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_08",
+      "model_response": "Symmetric key distribution protocol  \nMerkle tree  \nSHA-256  \nRSA algorithm  \nBitcoin",
+      "parsed_answer": [
+        "Symmetric key distribution protocol",
+        "Merkle tree",
+        "SHA-256",
+        "RSA algorithm",
+        "Bitcoin"
+      ],
+      "expected_answer": [
+        "Merkle tree",
+        "SHA-256",
+        "symmetric key distribution protocol",
+        "RSA algorithm",
+        "Bitcoin"
+      ],
+      "score": 0.8,
+      "latency_ms": 786.3734170095995,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_05",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_05",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 553.8793330197223,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_32",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_32",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 554.6623750124127,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_09",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_09",
+      "model_response": "Virtualization  \nAmazon EC2  \nDocker containers  \nKubernetes  \nMicroservices architecture",
+      "parsed_answer": [
+        "Virtualization",
+        "Amazon EC2",
+        "Docker containers",
+        "Kubernetes",
+        "Microservices architecture"
+      ],
+      "expected_answer": [
+        "Amazon EC2",
+        "microservices architecture",
+        "Docker containers",
+        "virtualization",
+        "Kubernetes"
+      ],
+      "score": 0.5,
+      "latency_ms": 553.6681250086986,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_09",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_09",
+      "model_response": "Virtualization  \nAmazon EC2  \nDocker containers  \nKubernetes  \nMicroservices architecture",
+      "parsed_answer": [
+        "Virtualization",
+        "Amazon EC2",
+        "Docker containers",
+        "Kubernetes",
+        "Microservices architecture"
+      ],
+      "expected_answer": [
+        "virtualization",
+        "Amazon EC2",
+        "Docker containers",
+        "microservices architecture",
+        "Kubernetes"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 571.3437499944121,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_32",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_32",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 480.57341697858647,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_33",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_33",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 493.6322910361923,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_10",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_10",
+      "model_response": "Motorola 68000  \nMS-DOS  \nWindows NT  \nNTFS file system  \nActive Directory",
+      "parsed_answer": [
+        "Motorola 68000",
+        "MS-DOS",
+        "Windows NT",
+        "NTFS file system",
+        "Active Directory"
+      ],
+      "expected_answer": [
+        "Motorola 68000",
+        "MS-DOS",
+        "x86 architecture",
+        "Windows NT",
+        "NTFS file system",
+        "Active Directory"
+      ],
+      "score": 0.0,
+      "latency_ms": 574.4179169996642,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_10",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_10",
+      "model_response": "Intel 8086  \nx86 architecture  \nMS-DOS  \nWindows NT  \nNTFS file system  \nActive Directory",
+      "parsed_answer": [
+        "Intel 8086",
+        "x86 architecture",
+        "MS-DOS",
+        "Windows NT",
+        "NTFS file system",
+        "Active Directory"
+      ],
+      "expected_answer": [
+        "Intel 8086",
+        "x86 architecture",
+        "MS-DOS",
+        "Windows NT",
+        "NTFS file system",
+        "Active Directory"
+      ],
+      "score": 1.0,
+      "latency_ms": 774.656584020704,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_06",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_06",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 845.1366660301574,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_05",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_05",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 1025.2432090346701,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_33",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_33",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 530.6809580069967,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_06",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_06",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 442.8616249933839,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_34",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_34",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 459.38237500377,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_11",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_11",
+      "model_response": "1. Cowpox inoculation observation\n2. Germ theory of disease\n3. Attenuated vaccines\n4. Recombinant DNA vaccines\n5. mRNA vaccines",
+      "parsed_answer": [
+        "Cowpox inoculation observation",
+        "Germ theory of disease",
+        "Attenuated vaccines",
+        "Recombinant DNA vaccines",
+        "mRNA vaccines"
+      ],
+      "expected_answer": [
+        "cowpox inoculation observation",
+        "germ theory of disease",
+        "attenuated vaccines",
+        "recombinant DNA vaccines",
+        "mRNA vaccines"
+      ],
+      "score": 1.0,
+      "latency_ms": 614.3583329976536,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_07",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_07",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 513.1106249755248,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_11",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_11",
+      "model_response": "germ theory of disease  \ncowpox inoculation observation  \nattenuated vaccines  \nrecombinant DNA vaccines  \nmRNA vaccines",
+      "parsed_answer": [
+        "germ theory of disease",
+        "cowpox inoculation observation",
+        "attenuated vaccines",
+        "recombinant DNA vaccines",
+        "mRNA vaccines"
+      ],
+      "expected_answer": [
+        "germ theory of disease",
+        "attenuated vaccines",
+        "cowpox inoculation observation",
+        "recombinant DNA vaccines",
+        "mRNA vaccines"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 539.6171669708565,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_34",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_34",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 478.07074995944276,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_07",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_07",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 537.3760830261745,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_12",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_12",
+      "model_response": "- Anesthesia\n- Antiseptic technique\n- X-ray imaging\n- Laparoscopic surgery\n- Robotic surgery (da Vinci)",
+      "parsed_answer": [
+        "Anesthesia",
+        "Antiseptic technique",
+        "X-ray imaging",
+        "Laparoscopic surgery",
+        "Robotic surgery (da Vinci)"
+      ],
+      "expected_answer": [
+        "anesthesia",
+        "antiseptic technique",
+        "X-ray imaging",
+        "laparoscopic surgery",
+        "robotic surgery (da Vinci)"
+      ],
+      "score": 1.0,
+      "latency_ms": 675.9597089840099,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_08",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_08",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 504.39695903332904,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_12",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_12",
+      "model_response": "antiseptic technique  \nX-ray imaging  \nelectronic nerve blocking  \nlaparoscopic surgery  \nrobotic surgery (da Vinci)",
+      "parsed_answer": [
+        "antiseptic technique",
+        "X-ray imaging",
+        "electronic nerve blocking",
+        "laparoscopic surgery",
+        "robotic surgery (da Vinci)"
+      ],
+      "expected_answer": [
+        "antiseptic technique",
+        "X-ray imaging",
+        "electronic nerve blocking",
+        "laparoscopic surgery",
+        "robotic surgery (da Vinci)"
+      ],
+      "score": 1.0,
+      "latency_ms": 659.9657500046305,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_35",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_35",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 832.7844580053352,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_35",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_35",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 736.1421670066193,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_08",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_08",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 525.2806250355206,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_13",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_13",
+      "model_response": "1. Penicillin discovery\n2. Mass production of penicillin\n3. Methicillin\n4. Tetracycline\n5. CRISPR antimicrobials",
+      "parsed_answer": [
+        "Penicillin discovery",
+        "Mass production of penicillin",
+        "Methicillin",
+        "Tetracycline",
+        "CRISPR antimicrobials"
+      ],
+      "expected_answer": [
+        "penicillin discovery",
+        "mass production of penicillin",
+        "tetracycline",
+        "methicillin",
+        "CRISPR antimicrobials"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 585.2148339617997,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_36",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_36",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 560.2562919957563,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_09",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_09",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 535.2378750103526,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_09",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_09",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 352.88762499112636,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_36",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_36",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 527.5030839839019,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_10",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_10",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 418.6936250189319,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_37",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_37",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 535.1661660242826,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_17",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_17",
+      "model_response": "Photovoltaic effect  \nThin-film PV  \nPerovskite solar cells  \nMulti-junction cells  \nSilicon solar cell",
+      "parsed_answer": [
+        "Photovoltaic effect",
+        "Thin-film PV",
+        "Perovskite solar cells",
+        "Multi-junction cells",
+        "Silicon solar cell"
+      ],
+      "expected_answer": [
+        "photovoltaic effect",
+        "thin-film PV",
+        "silicon solar cell",
+        "multi-junction cells",
+        "perovskite solar cells"
+      ],
+      "score": 0.7,
+      "latency_ms": 1050.4259579465725,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_14",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_14",
+      "model_response": "X-ray  \nCT scan  \nMRI  \nfunctional MRI  \nPET scan",
+      "parsed_answer": [
+        "X-ray",
+        "CT scan",
+        "MRI",
+        "functional MRI",
+        "PET scan"
+      ],
+      "expected_answer": [
+        "X-ray",
+        "CT scan",
+        "MRI",
+        "PET scan",
+        "functional MRI"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 542.7211659844033,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_10",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_10",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 391.2802500417456,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_13",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_13",
+      "model_response": "Penicillin discovery  \nMass production of penicillin  \nMethicillin  \nTetracycline  \nCRISPR antimicrobials",
+      "parsed_answer": [
+        "Penicillin discovery",
+        "Mass production of penicillin",
+        "Methicillin",
+        "Tetracycline",
+        "CRISPR antimicrobials"
+      ],
+      "expected_answer": [
+        "tetracycline",
+        "penicillin discovery",
+        "mass production of penicillin",
+        "methicillin",
+        "CRISPR antimicrobials"
+      ],
+      "score": 0.7,
+      "latency_ms": 931.4697090303525,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_37",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_37",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 469.99324997887015,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_14",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_14",
+      "model_response": "Ultrasound imaging  \nCT scan  \nPET scan  \nMRI  \nfunctional MRI",
+      "parsed_answer": [
+        "Ultrasound imaging",
+        "CT scan",
+        "PET scan",
+        "MRI",
+        "functional MRI"
+      ],
+      "expected_answer": [
+        "ultrasound imaging",
+        "MRI",
+        "CT scan",
+        "PET scan",
+        "functional MRI"
+      ],
+      "score": 0.8,
+      "latency_ms": 527.408416965045,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_15",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_15",
+      "model_response": "DNA structure discovery  \nRestriction enzymes  \nPCR  \nCRISPR-Cas9  \nHuman Genome Project",
+      "parsed_answer": [
+        "DNA structure discovery",
+        "Restriction enzymes",
+        "PCR",
+        "CRISPR-Cas9",
+        "Human Genome Project"
+      ],
+      "expected_answer": [
+        "DNA structure discovery",
+        "restriction enzymes",
+        "PCR",
+        "Human Genome Project",
+        "CRISPR-Cas9"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 506.25929195666686,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_11",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_11",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 556.6308749839664,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_38",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_38",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "No",
+      "score": 0.0,
+      "latency_ms": 775.8201250107959,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_38",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_38",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 588.3452499983832,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_11",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_11",
+      "model_response": "B. Electron-beam direct writing",
+      "parsed_answer": "B",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 528.1773330061696,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_15",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_15",
+      "model_response": "DNA structure discovery  \nRestriction enzymes  \nPCR  \nCRISPR-Cas9  \nHuman Genome Project",
+      "parsed_answer": [
+        "DNA structure discovery",
+        "Restriction enzymes",
+        "PCR",
+        "CRISPR-Cas9",
+        "Human Genome Project"
+      ],
+      "expected_answer": [
+        "restriction enzymes",
+        "DNA structure discovery",
+        "PCR",
+        "Human Genome Project",
+        "CRISPR-Cas9"
+      ],
+      "score": 0.8,
+      "latency_ms": 476.9674160052091,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_12",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_12",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 487.92962497100234,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_39",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_39",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 537.6324999961071,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_16",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_16",
+      "model_response": "1. Radioactivity discovery\n2. Nuclear fission\n3. Nuclear reactor (Chicago Pile-1)\n4. Manhattan Project\n5. Pressurized water reactor",
+      "parsed_answer": [
+        "Radioactivity discovery",
+        "Nuclear fission",
+        "Nuclear reactor (Chicago Pile-1)",
+        "Manhattan Project",
+        "Pressurized water reactor"
+      ],
+      "expected_answer": [
+        "radioactivity discovery",
+        "nuclear fission",
+        "Manhattan Project",
+        "nuclear reactor (Chicago Pile-1)",
+        "pressurized water reactor"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 722.325875016395,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_12",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_12",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 455.73995902668685,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_40",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_40",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 454.7814169782214,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_39",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_39",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 872.883542033378,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_16",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_16",
+      "model_response": "radioactivity discovery  \nnuclear fission  \nnuclear reactor (Chicago Pile-1)  \npressurized water reactor  \ncivilian nuclear consortium",
+      "parsed_answer": [
+        "radioactivity discovery",
+        "nuclear fission",
+        "nuclear reactor (Chicago Pile-1)",
+        "pressurized water reactor",
+        "civilian nuclear consortium"
+      ],
+      "expected_answer": [
+        "radioactivity discovery",
+        "nuclear fission",
+        "civilian nuclear consortium",
+        "nuclear reactor (Chicago Pile-1)",
+        "pressurized water reactor"
+      ],
+      "score": 0.8,
+      "latency_ms": 849.0383340395056,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_40",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_40",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "No",
+      "score": 0.0,
+      "latency_ms": 435.073625005316,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_17",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_17",
+      "model_response": "1. Photovoltaic effect\n2. Silicon solar cell\n3. Thin-film PV\n4. Multi-junction cells\n5. Perovskite solar cells",
+      "parsed_answer": [
+        "Photovoltaic effect",
+        "Silicon solar cell",
+        "Thin-film PV",
+        "Multi-junction cells",
+        "Perovskite solar cells"
+      ],
+      "expected_answer": [
+        "photovoltaic effect",
+        "silicon solar cell",
+        "thin-film PV",
+        "multi-junction cells",
+        "perovskite solar cells"
+      ],
+      "score": 1.0,
+      "latency_ms": 643.1067499797791,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_13",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_13",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 753.8111669709906,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_13",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_13",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 418.78645797260106,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_41",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_41",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 455.66920802230015,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_18",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_18",
+      "model_response": "1. Dynamo\n2. AC power system\n3. Transformer\n4. High-voltage transmission\n5. Smart grid",
+      "parsed_answer": [
+        "Dynamo",
+        "AC power system",
+        "Transformer",
+        "High-voltage transmission",
+        "Smart grid"
+      ],
+      "expected_answer": [
+        "dynamo",
+        "AC power system",
+        "transformer",
+        "high-voltage transmission",
+        "smart grid"
+      ],
+      "score": 1.0,
+      "latency_ms": 564.3357500084676,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_14",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_14",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 424.29220903431997,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_18",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_18",
+      "model_response": "dynamo  \nDC distribution network  \nhigh-voltage transmission  \ntransformer  \nsmart grid",
+      "parsed_answer": [
+        "dynamo",
+        "DC distribution network",
+        "high-voltage transmission",
+        "transformer",
+        "smart grid"
+      ],
+      "expected_answer": [
+        "dynamo",
+        "DC distribution network",
+        "transformer",
+        "high-voltage transmission",
+        "smart grid"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 510.4685419937596,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_14",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_14",
+      "model_response": "B. Specialized workload parallelism",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 513.1987920030951,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_41",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_41",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 796.8955420074053,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_42",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_42",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 514.8855830193497,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_15",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_15",
+      "model_response": "D.",
+      "parsed_answer": "D",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 424.34666701592505,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_19",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_19",
+      "model_response": "voltaic pile  \nlead-acid battery  \nnickel-cadmium battery  \nlithium-ion battery  \nsolid-state battery",
+      "parsed_answer": [
+        "voltaic pile",
+        "lead-acid battery",
+        "nickel-cadmium battery",
+        "lithium-ion battery",
+        "solid-state battery"
+      ],
+      "expected_answer": [
+        "voltaic pile",
+        "lead-acid battery",
+        "nickel-cadmium battery",
+        "lithium-ion battery",
+        "solid-state battery"
+      ],
+      "score": 1.0,
+      "latency_ms": 572.430833010003,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_42",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_42",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 413.544874987565,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_19",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_19",
+      "model_response": "lead-acid battery  \nnickel-cadmium battery  \nlithium-ion battery  \nsolid-state battery",
+      "parsed_answer": [
+        "lead-acid battery",
+        "nickel-cadmium battery",
+        "lithium-ion battery",
+        "solid-state battery"
+      ],
+      "expected_answer": [
+        "lead-acid battery",
+        "voltaic pile",
+        "nickel-cadmium battery",
+        "lithium-ion battery",
+        "solid-state battery"
+      ],
+      "score": 0.0,
+      "latency_ms": 561.3048750092275,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_20",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_20",
+      "model_response": "- Windmill\n- Wind turbine generator\n- Offshore wind turbine\n- Floating wind platform\n- Variable-speed turbine",
+      "parsed_answer": [
+        "Windmill",
+        "Wind turbine generator",
+        "Offshore wind turbine",
+        "Floating wind platform",
+        "Variable-speed turbine"
+      ],
+      "expected_answer": [
+        "windmill",
+        "wind turbine generator",
+        "variable-speed turbine",
+        "offshore wind turbine",
+        "floating wind platform"
+      ],
+      "score": 0.8,
+      "latency_ms": 563.1442079902627,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_43",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_43",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 552.0879160030745,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_15",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_15",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "C",
+      "score": 0.0,
+      "latency_ms": 720.9445830085315,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_16",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_16",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 511.80645800195634,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_20",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_20",
+      "model_response": "offshore platform engineering  \nfloating wind platform  \noffshore wind turbine  \nwind turbine generator  \nvariable-speed turbine",
+      "parsed_answer": [
+        "offshore platform engineering",
+        "floating wind platform",
+        "offshore wind turbine",
+        "wind turbine generator",
+        "variable-speed turbine"
+      ],
+      "expected_answer": [
+        "offshore platform engineering",
+        "offshore wind turbine",
+        "wind turbine generator",
+        "variable-speed turbine",
+        "floating wind platform"
+      ],
+      "score": 0.7,
+      "latency_ms": 517.5521670025773,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_16",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_16",
+      "model_response": "C.",
+      "parsed_answer": "C",
+      "expected_answer": "D",
+      "score": 0.0,
+      "latency_ms": 400.3866250277497,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_43",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_43",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 467.2681250376627,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_44",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_44",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 453.15799996024,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_17",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_17",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 515.5894590425305,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_44",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_44",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 485.8585419715382,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_21",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_21",
+      "model_response": "electromagnetic theory  \nradio waves demonstration  \nAM broadcasting  \nFM broadcasting  \ndigital radio (DAB)",
+      "parsed_answer": [
+        "electromagnetic theory",
+        "radio waves demonstration",
+        "AM broadcasting",
+        "FM broadcasting",
+        "digital radio (DAB)"
+      ],
+      "expected_answer": [
+        "electromagnetic theory",
+        "AM broadcasting",
+        "radio waves demonstration",
+        "FM broadcasting",
+        "digital radio (DAB)"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 567.6751249702647,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_17",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_17",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 399.1823330288753,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_21",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_21",
+      "model_response": "- Electromagnetic theory\n- Radio waves demonstration\n- AM broadcasting\n- FM broadcasting\n- Digital radio (DAB)",
+      "parsed_answer": [
+        "Electromagnetic theory",
+        "Radio waves demonstration",
+        "AM broadcasting",
+        "FM broadcasting",
+        "Digital radio (DAB)"
+      ],
+      "expected_answer": [
+        "electromagnetic theory",
+        "radio waves demonstration",
+        "AM broadcasting",
+        "FM broadcasting",
+        "digital radio (DAB)"
+      ],
+      "score": 1.0,
+      "latency_ms": 1166.7271660408005,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_45",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_45",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 499.9132090015337,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_18",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_18",
+      "model_response": "C. Southern blotting",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 544.4245830294676,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_22",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_22",
+      "model_response": "cathode ray tube  \nelectronic television  \ncolor television  \nsatellite television  \nstreaming video (Netflix)",
+      "parsed_answer": [
+        "cathode ray tube",
+        "electronic television",
+        "color television",
+        "satellite television",
+        "streaming video (Netflix)"
+      ],
+      "expected_answer": [
+        "cathode ray tube",
+        "electronic television",
+        "color television",
+        "satellite television",
+        "streaming video (Netflix)"
+      ],
+      "score": 1.0,
+      "latency_ms": 603.0652079498395,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_22",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_22",
+      "model_response": "electronic television  \nprojection television  \ncolor television  \nsatellite television  \nstreaming video (Netflix)",
+      "parsed_answer": [
+        "electronic television",
+        "projection television",
+        "color television",
+        "satellite television",
+        "streaming video (Netflix)"
+      ],
+      "expected_answer": [
+        "electronic television",
+        "projection television",
+        "satellite television",
+        "color television",
+        "streaming video (Netflix)"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 655.3381660487503,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_45",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_45",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 476.8659999826923,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_18",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_18",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 493.2895000092685,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_23",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_23",
+      "model_response": "Telegraph  \nTelephone  \nAutomatic switching  \nFiber optics  \nVoIP",
+      "parsed_answer": [
+        "Telegraph",
+        "Telephone",
+        "Automatic switching",
+        "Fiber optics",
+        "VoIP"
+      ],
+      "expected_answer": [
+        "telegraph",
+        "telephone",
+        "automatic switching",
+        "fiber optics",
+        "VoIP"
+      ],
+      "score": 1.0,
+      "latency_ms": 478.5264580277726,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_46",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_46",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 487.21033305628225,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_19",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_19",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 457.26391702191904,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_23",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_23",
+      "model_response": "Telegraph  \nTelephone  \nAutomatic switching  \nFiber optics  \nVoIP",
+      "parsed_answer": [
+        "Telegraph",
+        "Telephone",
+        "Automatic switching",
+        "Fiber optics",
+        "VoIP"
+      ],
+      "expected_answer": [
+        "telegraph",
+        "automatic switching",
+        "telephone",
+        "fiber optics",
+        "VoIP"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 506.5512919682078,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_19",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_19",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 470.80175002338365,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_24",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_24",
+      "model_response": "1. Rocket propulsion\n2. Sputnik\n3. Geostationary communication satellites\n4. GPS constellation\n5. Starlink constellation",
+      "parsed_answer": [
+        "Rocket propulsion",
+        "Sputnik",
+        "Geostationary communication satellites",
+        "GPS constellation",
+        "Starlink constellation"
+      ],
+      "expected_answer": [
+        "rocket propulsion",
+        "Sputnik",
+        "geostationary communication satellites",
+        "GPS constellation",
+        "Starlink constellation"
+      ],
+      "score": 1.0,
+      "latency_ms": 797.499084030278,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_47",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_47",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 592.9807080538012,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_20",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_20",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 541.6330419830047,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_46",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_46",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 904.479207994882,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_24",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_24",
+      "model_response": "rocket propulsion  \ncommercial communication satellite  \ngeostationary communication satellites  \nGPS constellation  \nStarlink constellation",
+      "parsed_answer": [
+        "rocket propulsion",
+        "commercial communication satellite",
+        "geostationary communication satellites",
+        "GPS constellation",
+        "Starlink constellation"
+      ],
+      "expected_answer": [
+        "rocket propulsion",
+        "commercial communication satellite",
+        "geostationary communication satellites",
+        "GPS constellation",
+        "Starlink constellation"
+      ],
+      "score": 1.0,
+      "latency_ms": 616.0450829775073,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_20",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_20",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 419.0854159533046,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_25",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_25",
+      "model_response": "ARPANET  \nDNS  \nemail (SMTP)  \nWorld Wide Web  \nWebSocket",
+      "parsed_answer": [
+        "ARPANET",
+        "DNS",
+        "email (SMTP)",
+        "World Wide Web",
+        "WebSocket"
+      ],
+      "expected_answer": [
+        "ARPANET",
+        "email (SMTP)",
+        "DNS",
+        "World Wide Web",
+        "WebSocket"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 495.2174170175567,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_48",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_48",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 474.23145797802135,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_47",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_47",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 713.5214589652605,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_21",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_21",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 474.55091698793694,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_48",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_48",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 842.403375019785,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_21",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_21",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 848.3135419664904,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_25",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_25",
+      "model_response": "World Wide Web  \nDNS  \nemail (SMTP)  \nWebSocket",
+      "parsed_answer": [
+        "World Wide Web",
+        "DNS",
+        "email (SMTP)",
+        "WebSocket"
+      ],
+      "expected_answer": [
+        "ARPANET",
+        "World Wide Web",
+        "DNS",
+        "email (SMTP)",
+        "WebSocket"
+      ],
+      "score": 0.0,
+      "latency_ms": 969.364124990534,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_49",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_49",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 660.8554999693297,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_26",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_26",
+      "model_response": "Bessemer process  \nopen hearth furnace  \nblast furnace  \nelectric arc furnace  \ncontinuous casting",
+      "parsed_answer": [
+        "Bessemer process",
+        "open hearth furnace",
+        "blast furnace",
+        "electric arc furnace",
+        "continuous casting"
+      ],
+      "expected_answer": [
+        "blast furnace",
+        "Bessemer process",
+        "open hearth furnace",
+        "electric arc furnace",
+        "continuous casting"
+      ],
+      "score": 0.8,
+      "latency_ms": 780.6793749914505,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_22",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_22",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 352.63366700382903,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_22",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_22",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 451.3977079768665,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_49",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_49",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 516.4812920265831,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_26",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_26",
+      "model_response": "Crucible steel process  \nBlast furnace  \nOpen hearth furnace  \nElectric arc furnace  \nContinuous casting",
+      "parsed_answer": [
+        "Crucible steel process",
+        "Blast furnace",
+        "Open hearth furnace",
+        "Electric arc furnace",
+        "Continuous casting"
+      ],
+      "expected_answer": [
+        "blast furnace",
+        "crucible steel process",
+        "electric arc furnace",
+        "open hearth furnace",
+        "continuous casting"
+      ],
+      "score": 0.8,
+      "latency_ms": 645.3031660057604,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_50",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_50",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 520.6567500135861,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_23",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_23",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 493.5981669696048,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_27",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_27",
+      "model_response": "1. Germanium diode\n2. Silicon wafer production\n3. Photolithography\n4. MOSFET\n5. FinFET",
+      "parsed_answer": [
+        "Germanium diode",
+        "Silicon wafer production",
+        "Photolithography",
+        "MOSFET",
+        "FinFET"
+      ],
+      "expected_answer": [
+        "germanium diode",
+        "silicon wafer production",
+        "photolithography",
+        "MOSFET",
+        "FinFET"
+      ],
+      "score": 1.0,
+      "latency_ms": 838.5667920229025,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_27",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_27",
+      "model_response": "germanium diode  \nphotolithography  \nMOSFET  \nFinFET  \nsilicon wafer production",
+      "parsed_answer": [
+        "germanium diode",
+        "photolithography",
+        "MOSFET",
+        "FinFET",
+        "silicon wafer production"
+      ],
+      "expected_answer": [
+        "germanium diode",
+        "photolithography",
+        "MOSFET",
+        "silicon wafer production",
+        "FinFET"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 445.4795829951763,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_50",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_50",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 441.1134590045549,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_24",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_24",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 331.5818749833852,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_23",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_23",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 523.2411250472069,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_28",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_28",
+      "model_response": "Bakelite  \npolyethylene  \npolypropylene  \npolycarbonate  \nbioplastics (PLA)",
+      "parsed_answer": [
+        "Bakelite",
+        "polyethylene",
+        "polypropylene",
+        "polycarbonate",
+        "bioplastics (PLA)"
+      ],
+      "expected_answer": [
+        "Bakelite",
+        "polyethylene",
+        "polypropylene",
+        "polycarbonate",
+        "bioplastics (PLA)"
+      ],
+      "score": 1.0,
+      "latency_ms": 584.5572919934057,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_01",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_01",
+      "model_response": "Linux  \nPython  \nJava  \nWindows NT  \nRuby",
+      "parsed_answer": [
+        "Linux",
+        "Python",
+        "Java",
+        "Windows NT",
+        "Ruby"
+      ],
+      "expected_answer": [
+        "Unix",
+        "Linux"
+      ],
+      "score": 0.28571428571428575,
+      "latency_ms": 486.71637498773634,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_01",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_01",
+      "model_response": "Unix  \nLinux  \nPython  \nJava  \nWindows NT  \nRuby",
+      "parsed_answer": [
+        "Unix",
+        "Linux",
+        "Python",
+        "Java",
+        "Windows NT",
+        "Ruby"
+      ],
+      "expected_answer": [
+        "Unix",
+        "Linux",
+        "Python",
+        "Ruby"
+      ],
+      "score": 0.8,
+      "latency_ms": 882.4318340048194,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_28",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_28",
+      "model_response": "Celluloid derivative  \nPolyethylene  \nPolypropylene  \nPolycarbonate  \nBioplastics (PLA)",
+      "parsed_answer": [
+        "Celluloid derivative",
+        "Polyethylene",
+        "Polypropylene",
+        "Polycarbonate",
+        "Bioplastics (PLA)"
+      ],
+      "expected_answer": [
+        "celluloid derivative",
+        "polyethylene",
+        "polypropylene",
+        "polycarbonate",
+        "bioplastics (PLA)"
+      ],
+      "score": 1.0,
+      "latency_ms": 882.767207978759,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_29",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_29",
+      "model_response": "Fiberglass  \nKevlar  \nCarbon fiber  \nGraphene composites  \nCarbon fiber reinforced polymer (CFRP)",
+      "parsed_answer": [
+        "Fiberglass",
+        "Kevlar",
+        "Carbon fiber",
+        "Graphene composites",
+        "Carbon fiber reinforced polymer (CFRP)"
+      ],
+      "expected_answer": [
+        "fiberglass",
+        "carbon fiber",
+        "Kevlar",
+        "carbon fiber reinforced polymer (CFRP)",
+        "graphene composites"
+      ],
+      "score": 0.8,
+      "latency_ms": 493.02279198309407,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_25",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_25",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "C",
+      "score": 0.0,
+      "latency_ms": 403.74579204944894,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_24",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_24",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 851.2834580033086,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_02",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_02",
+      "model_response": "HTTP  \nEmail (SMTP)  \nDNS",
+      "parsed_answer": [
+        "HTTP",
+        "Email (SMTP)",
+        "DNS"
+      ],
+      "expected_answer": [
+        "HTTP",
+        "DNS"
+      ],
+      "score": 0.8,
+      "latency_ms": 495.74758304515854,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_29",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_29",
+      "model_response": "Kevlar  \ncarbon fiber  \ncarbon fiber reinforced polymer (CFRP)  \ngraphene composites",
+      "parsed_answer": [
+        "Kevlar",
+        "carbon fiber",
+        "carbon fiber reinforced polymer (CFRP)",
+        "graphene composites"
+      ],
+      "expected_answer": [
+        "Kevlar",
+        "carbon fiber",
+        "fiberglass",
+        "carbon fiber reinforced polymer (CFRP)",
+        "graphene composites"
+      ],
+      "score": 0.0,
+      "latency_ms": 528.6934580071829,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_02",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_02",
+      "model_response": "HTTP  \nEmail (SMTP)  \nDNS",
+      "parsed_answer": [
+        "HTTP",
+        "Email (SMTP)",
+        "DNS"
+      ],
+      "expected_answer": [
+        "HTTP",
+        "Email (SMTP)",
+        "DNS"
+      ],
+      "score": 1.0,
+      "latency_ms": 822.8509170003235,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_25",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_25",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 411.9538749800995,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_30",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_30",
+      "model_response": "- Float glass process\n- Tempered glass\n- Optical fiber\n- Gorilla Glass\n- Transparent ceramics",
+      "parsed_answer": [
+        "Float glass process",
+        "Tempered glass",
+        "Optical fiber",
+        "Gorilla Glass",
+        "Transparent ceramics"
+      ],
+      "expected_answer": [
+        "float glass process",
+        "tempered glass",
+        "optical fiber",
+        "Gorilla Glass",
+        "transparent ceramics"
+      ],
+      "score": 1.0,
+      "latency_ms": 615.953917033039,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_03",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_03",
+      "model_response": "- Integrated circuits\n- Smartphones",
+      "parsed_answer": [
+        "Integrated circuits",
+        "Smartphones"
+      ],
+      "expected_answer": [
+        "integrated circuits",
+        "smartphones",
+        "satellites"
+      ],
+      "score": 0.8,
+      "latency_ms": 529.8492080182768,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_03",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_03",
+      "model_response": "- Integrated circuits\n- Smartphones",
+      "parsed_answer": [
+        "Integrated circuits",
+        "Smartphones"
+      ],
+      "expected_answer": [
+        "integrated circuits",
+        "smartphones",
+        "satellites"
+      ],
+      "score": 0.8,
+      "latency_ms": 459.0911249979399,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_30",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_30",
+      "model_response": "plate-rolled glass  \ntempered glass  \noptical fiber  \nGorilla Glass  \ntransparent ceramics",
+      "parsed_answer": [
+        "plate-rolled glass",
+        "tempered glass",
+        "optical fiber",
+        "Gorilla Glass",
+        "transparent ceramics"
+      ],
+      "expected_answer": [
+        "plate-rolled glass",
+        "tempered glass",
+        "optical fiber",
+        "Gorilla Glass",
+        "transparent ceramics"
+      ],
+      "score": 1.0,
+      "latency_ms": 535.8186250086874,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_26",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_26",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 756.7295000189915,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_04",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_04",
+      "model_response": "MySQL  \nPostgreSQL  \nOracle Database",
+      "parsed_answer": [
+        "MySQL",
+        "PostgreSQL",
+        "Oracle Database"
+      ],
+      "expected_answer": [
+        "MySQL",
+        "PostgreSQL",
+        "Oracle Database"
+      ],
+      "score": 1.0,
+      "latency_ms": 458.65187502931803,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_31",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_31",
+      "model_response": "V-2 rocket  \nliquid-fuel rocket  \nAtlas missile  \nSaturn V  \nFalcon 9 reusable",
+      "parsed_answer": [
+        "V-2 rocket",
+        "liquid-fuel rocket",
+        "Atlas missile",
+        "Saturn V",
+        "Falcon 9 reusable"
+      ],
+      "expected_answer": [
+        "liquid-fuel rocket",
+        "V-2 rocket",
+        "Atlas missile",
+        "Saturn V",
+        "Falcon 9 reusable"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 578.4869579947554,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_27",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_27",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 446.3227090309374,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_26",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_26",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 709.1347919777036,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_31",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_31",
+      "model_response": "Liquid-fuel rocket  \nV-2 rocket  \nAtlas missile  \nSaturn V  \nFalcon 9 reusable",
+      "parsed_answer": [
+        "Liquid-fuel rocket",
+        "V-2 rocket",
+        "Atlas missile",
+        "Saturn V",
+        "Falcon 9 reusable"
+      ],
+      "expected_answer": [
+        "liquid-fuel rocket",
+        "Atlas missile",
+        "V-2 rocket",
+        "Saturn V",
+        "Falcon 9 reusable"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 561.0932080307975,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_04",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_04",
+      "model_response": "MySQL  \nPostgreSQL",
+      "parsed_answer": [
+        "MySQL",
+        "PostgreSQL"
+      ],
+      "expected_answer": [
+        "MySQL",
+        "PostgreSQL"
+      ],
+      "score": 1.0,
+      "latency_ms": 501.7691249959171,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_05",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_05",
+      "model_response": "web browsers  \nHTML  \nCSS  \nJavaScript",
+      "parsed_answer": [
+        "web browsers",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "expected_answer": [
+        "web browsers",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "score": 1.0,
+      "latency_ms": 499.98412502463907,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_32",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_32",
+      "model_response": "Sputnik  \nVostok 1  \nApollo 11  \nSpace Shuttle  \nISS",
+      "parsed_answer": [
+        "Sputnik",
+        "Vostok 1",
+        "Apollo 11",
+        "Space Shuttle",
+        "ISS"
+      ],
+      "expected_answer": [
+        "Sputnik",
+        "Vostok 1",
+        "Apollo 11",
+        "Space Shuttle",
+        "ISS"
+      ],
+      "score": 1.0,
+      "latency_ms": 553.8472080370411,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_28",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_28",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 446.1907919612713,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_27",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_27",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "C",
+      "score": 0.0,
+      "latency_ms": 985.2939579868689,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_28",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_28",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "B",
+      "score": 0.0,
+      "latency_ms": 424.7454580035992,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_05",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_05",
+      "model_response": "HTML  \nCSS  \nJavaScript",
+      "parsed_answer": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "expected_answer": [
+        "HTML",
+        "CSS"
+      ],
+      "score": 0.8,
+      "latency_ms": 471.31329198600724,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_32",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_32",
+      "model_response": "Sputnik  \nISS  \njoint international crewed mission  \nApollo 11  \nSpace Shuttle",
+      "parsed_answer": [
+        "Sputnik",
+        "ISS",
+        "joint international crewed mission",
+        "Apollo 11",
+        "Space Shuttle"
+      ],
+      "expected_answer": [
+        "Sputnik",
+        "joint international crewed mission",
+        "ISS",
+        "Space Shuttle",
+        "Apollo 11"
+      ],
+      "score": 0.8,
+      "latency_ms": 577.7031250181608,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_33",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_33",
+      "model_response": "Sputnik  \nTelstar  \nGPS satellite  \nHubble Space Telescope  \nJames Webb Space Telescope",
+      "parsed_answer": [
+        "Sputnik",
+        "Telstar",
+        "GPS satellite",
+        "Hubble Space Telescope",
+        "James Webb Space Telescope"
+      ],
+      "expected_answer": [
+        "Sputnik",
+        "Telstar",
+        "GPS satellite",
+        "Hubble Space Telescope",
+        "James Webb Space Telescope"
+      ],
+      "score": 1.0,
+      "latency_ms": 532.1962910238653,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_29",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_29",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "C",
+      "score": 0.0,
+      "latency_ms": 407.5965829542838,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_33",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_33",
+      "model_response": "Sputnik  \nTelstar  \nGPS satellite  \nHubble Space Telescope  \nJames Webb Space Telescope",
+      "parsed_answer": [
+        "Sputnik",
+        "Telstar",
+        "GPS satellite",
+        "Hubble Space Telescope",
+        "James Webb Space Telescope"
+      ],
+      "expected_answer": [
+        "Sputnik",
+        "Hubble Space Telescope",
+        "Telstar",
+        "GPS satellite",
+        "James Webb Space Telescope"
+      ],
+      "score": 0.8,
+      "latency_ms": 518.1960840127431,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_06",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_06",
+      "model_response": "Google Maps  \nRide-sharing apps (Uber/Lyft)  \nPrecision agriculture",
+      "parsed_answer": [
+        "Google Maps",
+        "Ride-sharing apps (Uber/Lyft)",
+        "Precision agriculture"
+      ],
+      "expected_answer": [
+        "wristwatches"
+      ],
+      "score": 0.0,
+      "latency_ms": 444.8099579894915,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_29",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_29",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 330.67958295578137,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_30",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_30",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 410.69737501675263,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_06",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_06",
+      "model_response": "Google Maps  \nRide-sharing apps (Uber/Lyft)  \nPrecision agriculture",
+      "parsed_answer": [
+        "Google Maps",
+        "Ride-sharing apps (Uber/Lyft)",
+        "Precision agriculture"
+      ],
+      "expected_answer": [
+        "Google Maps",
+        "ride-sharing apps (Uber/Lyft)",
+        "precision agriculture"
+      ],
+      "score": 1.0,
+      "latency_ms": 1055.3929589805193,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_34",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_34",
+      "model_response": "Mariner 4  \nfast-tracked water-search lander  \nMars Pathfinder  \nSpirit/Opportunity rovers  \nPerseverance/Ingenuity",
+      "parsed_answer": [
+        "Mariner 4",
+        "fast-tracked water-search lander",
+        "Mars Pathfinder",
+        "Spirit/Opportunity rovers",
+        "Perseverance/Ingenuity"
+      ],
+      "expected_answer": [
+        "Mariner 4",
+        "fast-tracked water-search lander",
+        "Mars Pathfinder",
+        "Spirit/Opportunity rovers",
+        "Perseverance/Ingenuity"
+      ],
+      "score": 1.0,
+      "latency_ms": 521.7485839966685,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_07",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_07",
+      "model_response": "Android  \nDocker  \nChrome OS  \nSteam Deck",
+      "parsed_answer": [
+        "Android",
+        "Docker",
+        "Chrome OS",
+        "Steam Deck"
+      ],
+      "expected_answer": [
+        "Android",
+        "Docker",
+        "Chrome OS",
+        "the Steam Deck"
+      ],
+      "score": 1.0,
+      "latency_ms": 535.1252499967813,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_34",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_34",
+      "model_response": "Mariner 4  \nViking landers  \nMars Pathfinder  \nSpirit/Opportunity rovers  \nPerseverance/Ingenuity",
+      "parsed_answer": [
+        "Mariner 4",
+        "Viking landers",
+        "Mars Pathfinder",
+        "Spirit/Opportunity rovers",
+        "Perseverance/Ingenuity"
+      ],
+      "expected_answer": [
+        "Mariner 4",
+        "Viking landers",
+        "Mars Pathfinder",
+        "Spirit/Opportunity rovers",
+        "Perseverance/Ingenuity"
+      ],
+      "score": 1.0,
+      "latency_ms": 874.3872499908321,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_07",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_07",
+      "model_response": "Android  \nChrome OS  \nSteam Deck",
+      "parsed_answer": [
+        "Android",
+        "Chrome OS",
+        "Steam Deck"
+      ],
+      "expected_answer": [
+        "Android",
+        "Chrome OS"
+      ],
+      "score": 0.8,
+      "latency_ms": 534.8684579948895,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_08",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_08",
+      "model_response": "HTTPS  \nSSH  \nBitcoin",
+      "parsed_answer": [
+        "HTTPS",
+        "SSH",
+        "Bitcoin"
+      ],
+      "expected_answer": [
+        "HTTPS",
+        "SSH",
+        "Bitcoin"
+      ],
+      "score": 1.0,
+      "latency_ms": 505.68820897024125,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_30",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_30",
+      "model_response": "D. Frequency-division multiplexing at massive scale",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 532.4841669644229,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_35",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_35",
+      "model_response": "Salyut 1  \nSkylab  \nMir  \nISS  \nTiangong",
+      "parsed_answer": [
+        "Salyut 1",
+        "Skylab",
+        "Mir",
+        "ISS",
+        "Tiangong"
+      ],
+      "expected_answer": [
+        "Salyut 1",
+        "Skylab",
+        "Mir",
+        "ISS",
+        "Tiangong"
+      ],
+      "score": 1.0,
+      "latency_ms": 638.2995419553481,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_31",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_31",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 421.43816698808223,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_35",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_35",
+      "model_response": "Skylab  \nSalyut 1  \nMir  \nISS  \nTiangong",
+      "parsed_answer": [
+        "Skylab",
+        "Salyut 1",
+        "Mir",
+        "ISS",
+        "Tiangong"
+      ],
+      "expected_answer": [
+        "Skylab",
+        "Salyut 1",
+        "Mir",
+        "ISS",
+        "Tiangong"
+      ],
+      "score": 1.0,
+      "latency_ms": 633.0457919975743,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_36",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_36",
+      "model_response": "1. Guano trade\n2. Superphosphate\n3. Haber-Bosch process\n4. NPK compound fertilizer\n5. Precision fertilization",
+      "parsed_answer": [
+        "Guano trade",
+        "Superphosphate",
+        "Haber-Bosch process",
+        "NPK compound fertilizer",
+        "Precision fertilization"
+      ],
+      "expected_answer": [
+        "guano trade",
+        "superphosphate",
+        "Haber-Bosch process",
+        "NPK compound fertilizer",
+        "precision fertilization"
+      ],
+      "score": 1.0,
+      "latency_ms": 648.6407910124399,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_08",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_08",
+      "model_response": "HTTPS  \nSSH  \nBitcoin",
+      "parsed_answer": [
+        "HTTPS",
+        "SSH",
+        "Bitcoin"
+      ],
+      "expected_answer": [],
+      "score": 0.0,
+      "latency_ms": 862.0055000064895,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_31",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_31",
+      "model_response": "A.",
+      "parsed_answer": "A",
+      "expected_answer": "C",
+      "score": 0.0,
+      "latency_ms": 837.5533749931492,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_32",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_32",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "D",
+      "score": 0.0,
+      "latency_ms": 510.42445795610547,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_36",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_36",
+      "model_response": "Biological nitrogen fixation  \nGuano trade  \nSuperphosphate  \nNPK compound fertilizer  \nPrecision fertilization",
+      "parsed_answer": [
+        "Biological nitrogen fixation",
+        "Guano trade",
+        "Superphosphate",
+        "NPK compound fertilizer",
+        "Precision fertilization"
+      ],
+      "expected_answer": [
+        "guano trade",
+        "superphosphate",
+        "biological nitrogen fixation",
+        "NPK compound fertilizer",
+        "precision fertilization"
+      ],
+      "score": 0.8,
+      "latency_ms": 464.00624996749684,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_09",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_09",
+      "model_response": "Linux  \nmacOS  \nthe C programming language  \nthe Bash shell",
+      "parsed_answer": [
+        "Linux",
+        "macOS",
+        "the C programming language",
+        "the Bash shell"
+      ],
+      "expected_answer": [
+        "Linux",
+        "the Bash shell"
+      ],
+      "score": 0.6666666666666666,
+      "latency_ms": 468.0042089894414,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_32",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_32",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 472.97616698779166,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_09",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_09",
+      "model_response": "Linux  \nmacOS  \nthe C programming language  \nTCP/IP sockets  \nthe Bash shell",
+      "parsed_answer": [
+        "Linux",
+        "macOS",
+        "the C programming language",
+        "TCP/IP sockets",
+        "the Bash shell"
+      ],
+      "expected_answer": [
+        "Linux",
+        "macOS",
+        "the C programming language",
+        "the Bash shell"
+      ],
+      "score": 0.888888888888889,
+      "latency_ms": 1488.3202079799958,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_37",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_37",
+      "model_response": "- Selective breeding\n- Mendelian genetics\n- Hybrid vigor exploitation\n- Green Revolution varieties\n- GMO crops",
+      "parsed_answer": [
+        "Selective breeding",
+        "Mendelian genetics",
+        "Hybrid vigor exploitation",
+        "Green Revolution varieties",
+        "GMO crops"
+      ],
+      "expected_answer": [
+        "selective breeding",
+        "Mendelian genetics",
+        "hybrid vigor exploitation",
+        "Green Revolution varieties",
+        "GMO crops"
+      ],
+      "score": 1.0,
+      "latency_ms": 612.1467500342987,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_10",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_10",
+      "model_response": "smartphones  \nelectric vehicles (Tesla)  \nlaptop computers",
+      "parsed_answer": [
+        "smartphones",
+        "electric vehicles (Tesla)",
+        "laptop computers"
+      ],
+      "expected_answer": [
+        "smartphones",
+        "electric vehicles (Tesla)",
+        "laptop computers"
+      ],
+      "score": 1.0,
+      "latency_ms": 489.18754199985415,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_33",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_33",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 491.6087500168942,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_37",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_37",
+      "model_response": "Selective breeding  \nHybrid vigor exploitation  \nMendelian genetics  \nGreen Revolution varieties  \nGMO crops",
+      "parsed_answer": [
+        "Selective breeding",
+        "Hybrid vigor exploitation",
+        "Mendelian genetics",
+        "Green Revolution varieties",
+        "GMO crops"
+      ],
+      "expected_answer": [
+        "selective breeding",
+        "hybrid vigor exploitation",
+        "Green Revolution varieties",
+        "Mendelian genetics",
+        "GMO crops"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 535.9887919621542,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_10",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_10",
+      "model_response": "- Smartphones\n- Electric vehicles (Tesla)\n- Laptop computers",
+      "parsed_answer": [
+        "Smartphones",
+        "Electric vehicles (Tesla)",
+        "Laptop computers"
+      ],
+      "expected_answer": [
+        "electric vehicles (Tesla)"
+      ],
+      "score": 0.5,
+      "latency_ms": 477.35800000373274,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_33",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_33",
+      "model_response": "B. Vidicon tube cameras",
+      "parsed_answer": "B",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 473.9218329777941,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_38",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_38",
+      "model_response": "shaduf  \naqueducts  \ndrip irrigation  \ncenter pivot irrigation  \nsmart irrigation sensors",
+      "parsed_answer": [
+        "shaduf",
+        "aqueducts",
+        "drip irrigation",
+        "center pivot irrigation",
+        "smart irrigation sensors"
+      ],
+      "expected_answer": [
+        "shaduf",
+        "aqueducts",
+        "center pivot irrigation",
+        "drip irrigation",
+        "smart irrigation sensors"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 501.4263750053942,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_34",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_34",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 418.5317500378005,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_11",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_11",
+      "model_response": "- Integrated circuits\n- Smartphones\n- LED lights",
+      "parsed_answer": [
+        "Integrated circuits",
+        "Smartphones",
+        "LED lights"
+      ],
+      "expected_answer": [
+        "integrated circuits",
+        "smartphones",
+        "solar panels",
+        "LED lights"
+      ],
+      "score": 0.8571428571428571,
+      "latency_ms": 514.1600829665549,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_38",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_38",
+      "model_response": "shaduf  \nqanat systems  \ndrip irrigation  \ncenter pivot irrigation  \nsmart irrigation sensors",
+      "parsed_answer": [
+        "shaduf",
+        "qanat systems",
+        "drip irrigation",
+        "center pivot irrigation",
+        "smart irrigation sensors"
+      ],
+      "expected_answer": [
+        "shaduf",
+        "qanat systems",
+        "drip irrigation",
+        "center pivot irrigation",
+        "smart irrigation sensors"
+      ],
+      "score": 1.0,
+      "latency_ms": 538.9598330366425,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_11",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_11",
+      "model_response": "Integrated circuits",
+      "parsed_answer": [
+        "Integrated circuits"
+      ],
+      "expected_answer": [
+        "smartphones"
+      ],
+      "score": 0.0,
+      "latency_ms": 511.20708300732076,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_34",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_34",
+      "model_response": "D.",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 427.5852919672616,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_12",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_12",
+      "model_response": "computer chips  \nsolar cells",
+      "parsed_answer": [
+        "computer chips",
+        "solar cells"
+      ],
+      "expected_answer": [
+        "computer chips",
+        "solar cells"
+      ],
+      "score": 1.0,
+      "latency_ms": 501.9985000253655,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_39",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_39",
+      "model_response": "1. Paris Green\n2. Biopesticides (Bt)\n3. DDT\n4. Organophosphates\n5. Pyrethroids",
+      "parsed_answer": [
+        "Paris Green",
+        "Biopesticides (Bt)",
+        "DDT",
+        "Organophosphates",
+        "Pyrethroids"
+      ],
+      "expected_answer": [
+        "Paris Green",
+        "DDT",
+        "organophosphates",
+        "pyrethroids",
+        "biopesticides (Bt)"
+      ],
+      "score": 0.7,
+      "latency_ms": 614.3721669795923,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_35",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_35",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "A",
+      "score": 0.0,
+      "latency_ms": 506.7089169751853,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_39",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_39",
+      "model_response": "Paris Green  \nOrganophosphates  \nBiopesticides (Bt)  \nPyrethroids",
+      "parsed_answer": [
+        "Paris Green",
+        "Organophosphates",
+        "Biopesticides (Bt)",
+        "Pyrethroids"
+      ],
+      "expected_answer": [
+        "Paris Green",
+        "organophosphates",
+        "DDT",
+        "pyrethroids",
+        "biopesticides (Bt)"
+      ],
+      "score": 0.0,
+      "latency_ms": 617.8849159623496,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_35",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_35",
+      "model_response": "B.",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 458.26049998868257,
+      "error": null
+    },
+    {
+      "question_id": "chain_f_40",
+      "question_type": "CHAIN",
+      "variant": "factual",
+      "pair_id": "chain_40",
+      "model_response": "- Salting and smoking\n- Pasteurization\n- Canning\n- Refrigeration\n- Freeze-drying",
+      "parsed_answer": [
+        "Salting and smoking",
+        "Pasteurization",
+        "Canning",
+        "Refrigeration",
+        "Freeze-drying"
+      ],
+      "expected_answer": [
+        "salting and smoking",
+        "canning",
+        "pasteurization",
+        "refrigeration",
+        "freeze-drying"
+      ],
+      "score": 0.8999999999999999,
+      "latency_ms": 537.1998330228962,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_12",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_12",
+      "model_response": "computer chips  \nsolar cells",
+      "parsed_answer": [
+        "computer chips",
+        "solar cells"
+      ],
+      "expected_answer": [
+        "solar cells"
+      ],
+      "score": 0.6666666666666666,
+      "latency_ms": 838.0657910020091,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_13",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_13",
+      "model_response": "personal computers  \nmainframe computers  \nsmartphones  \ncalculators  \nthe internet",
+      "parsed_answer": [
+        "personal computers",
+        "mainframe computers",
+        "smartphones",
+        "calculators",
+        "the internet"
+      ],
+      "expected_answer": [
+        "personal computers",
+        "smartphones",
+        "calculators"
+      ],
+      "score": 0.7499999999999999,
+      "latency_ms": 573.3624589629471,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_36",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_36",
+      "model_response": "B",
+      "parsed_answer": "B",
+      "expected_answer": "B",
+      "score": 1.0,
+      "latency_ms": 491.27033300464973,
+      "error": null
+    },
+    {
+      "question_id": "chain_cf_40",
+      "question_type": "CHAIN",
+      "variant": "counterfactual",
+      "pair_id": "chain_40",
+      "model_response": "Salting and smoking  \nVacuum sealing  \nRefrigeration  \nPasteurization  \nFreeze-drying",
+      "parsed_answer": [
+        "Salting and smoking",
+        "Vacuum sealing",
+        "Refrigeration",
+        "Pasteurization",
+        "Freeze-drying"
+      ],
+      "expected_answer": [
+        "salting and smoking",
+        "pasteurization",
+        "vacuum sealing",
+        "refrigeration",
+        "freeze-drying"
+      ],
+      "score": 0.8,
+      "latency_ms": 462.3694580513984,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_13",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_13",
+      "model_response": "smartphones",
+      "parsed_answer": [
+        "smartphones"
+      ],
+      "expected_answer": [
+        "smartphones"
+      ],
+      "score": 1.0,
+      "latency_ms": 496.6851249919273,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_36",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_36",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "D",
+      "score": 0.0,
+      "latency_ms": 459.63670895434916,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_01",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_01",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 483.3731669932604,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_37",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_37",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 454.5323339989409,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_14",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_14",
+      "model_response": "- Television\n- Radar displays\n- Oscilloscopes",
+      "parsed_answer": [
+        "Television",
+        "Radar displays",
+        "Oscilloscopes"
+      ],
+      "expected_answer": [
+        "oscilloscopes"
+      ],
+      "score": 0.5,
+      "latency_ms": 476.8316660192795,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_01",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_01",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 547.3121670074761,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_14",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_14",
+      "model_response": "television  \nradar displays  \noscilloscopes",
+      "parsed_answer": [
+        "television",
+        "radar displays",
+        "oscilloscopes"
+      ],
+      "expected_answer": [
+        "television",
+        "radar displays",
+        "oscilloscopes"
+      ],
+      "score": 1.0,
+      "latency_ms": 730.7235000189394,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_37",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_37",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 375.55604201043025,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_02",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_02",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 519.8033329797909,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_38",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_38",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 313.9194999821484,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_02",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_02",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 430.6537499651313,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_15",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_15",
+      "model_response": "early radio  \nearly computers  \ntelephone amplifiers",
+      "parsed_answer": [
+        "early radio",
+        "early computers",
+        "telephone amplifiers"
+      ],
+      "expected_answer": [
+        "early radio",
+        "early computers",
+        "telephone amplifiers"
+      ],
+      "score": 1.0,
+      "latency_ms": 489.58245798712596,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_38",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_38",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 383.33395798690617,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_15",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_15",
+      "model_response": "- Early computers\n- Transistors",
+      "parsed_answer": [
+        "Early computers",
+        "Transistors"
+      ],
+      "expected_answer": [
+        "early radio"
+      ],
+      "score": 0.0,
+      "latency_ms": 566.2779159611091,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_03",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_03",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 496.598333993461,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_39",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_39",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "A",
+      "score": 1.0,
+      "latency_ms": 436.9388750055805,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_16",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_16",
+      "model_response": "electric motors  \ntelecommunications  \ncomputers",
+      "parsed_answer": [
+        "electric motors",
+        "telecommunications",
+        "computers"
+      ],
+      "expected_answer": [
+        "electric motors",
+        "telecommunications",
+        "computers"
+      ],
+      "score": 1.0,
+      "latency_ms": 515.9433329827152,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_03",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_03",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 413.95887499675155,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_39",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_39",
+      "model_response": "C",
+      "parsed_answer": "C",
+      "expected_answer": "C",
+      "score": 1.0,
+      "latency_ms": 367.1301670256071,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_16",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_16",
+      "model_response": "electric motors  \ntelecommunications  \ncomputers",
+      "parsed_answer": [
+        "electric motors",
+        "telecommunications",
+        "computers"
+      ],
+      "expected_answer": [
+        "telecommunications"
+      ],
+      "score": 0.5,
+      "latency_ms": 632.4147919658571,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_17",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_17",
+      "model_response": "synthetic fertilizers  \nworld population growth",
+      "parsed_answer": [
+        "synthetic fertilizers",
+        "world population growth"
+      ],
+      "expected_answer": [
+        "synthetic fertilizers",
+        "explosives (TNT)",
+        "world population growth"
+      ],
+      "score": 0.8,
+      "latency_ms": 480.39991600671783,
+      "error": null
+    },
+    {
+      "question_id": "bridge_f_40",
+      "question_type": "BRIDGE",
+      "variant": "factual",
+      "pair_id": "bridge_40",
+      "model_response": "A",
+      "parsed_answer": "A",
+      "expected_answer": "B",
+      "score": 0.0,
+      "latency_ms": 472.1349999890663,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_04",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_04",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "Yes",
+      "score": 0.0,
+      "latency_ms": 421.71520803822204,
+      "error": null
+    },
+    {
+      "question_id": "bridge_cf_40",
+      "question_type": "BRIDGE",
+      "variant": "counterfactual",
+      "pair_id": "bridge_40",
+      "model_response": "D",
+      "parsed_answer": "D",
+      "expected_answer": "D",
+      "score": 1.0,
+      "latency_ms": 383.0324169830419,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_17",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_17",
+      "model_response": "- Synthetic fertilizers\n- World population growth\n- Organic farming",
+      "parsed_answer": [
+        "Synthetic fertilizers",
+        "World population growth",
+        "Organic farming"
+      ],
+      "expected_answer": [
+        "explosives (TNT)"
+      ],
+      "score": 0.0,
+      "latency_ms": 525.4307080176659,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_04",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_04",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 984.6345419646241,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_05",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_05",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 408.7325420114212,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_18",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_18",
+      "model_response": "nuclear power plants  \nnuclear weapons  \nmedical radioisotopes  \nnuclear submarines",
+      "parsed_answer": [
+        "nuclear power plants",
+        "nuclear weapons",
+        "medical radioisotopes",
+        "nuclear submarines"
+      ],
+      "expected_answer": [
+        "nuclear power plants",
+        "nuclear weapons",
+        "medical radioisotopes",
+        "nuclear submarines"
+      ],
+      "score": 1.0,
+      "latency_ms": 559.144250000827,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_06",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_06",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 467.7953750360757,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_18",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_18",
+      "model_response": "- Nuclear power plants\n- Nuclear submarines",
+      "parsed_answer": [
+        "Nuclear power plants",
+        "Nuclear submarines"
+      ],
+      "expected_answer": [
+        "nuclear weapons",
+        "medical radioisotopes"
+      ],
+      "score": 0.0,
+      "latency_ms": 529.7147079836577,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_19",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_19",
+      "model_response": "- Railroads\n- Factories\n- The Industrial Revolution\n- Coal mining",
+      "parsed_answer": [
+        "Railroads",
+        "Factories",
+        "The Industrial Revolution",
+        "Coal mining"
+      ],
+      "expected_answer": [
+        "railroads",
+        "factories",
+        "the Industrial Revolution"
+      ],
+      "score": 0.8571428571428571,
+      "latency_ms": 569.4250829983503,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_05",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_05",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 792.4762080074288,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_06",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_06",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 448.681833979208,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_07",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_07",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "Yes",
+      "score": 0.0,
+      "latency_ms": 520.6590830348432,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_19",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_19",
+      "model_response": "- Railroads\n- Factories\n- The Industrial Revolution\n- Coal mining",
+      "parsed_answer": [
+        "Railroads",
+        "Factories",
+        "The Industrial Revolution",
+        "Coal mining"
+      ],
+      "expected_answer": [
+        "railroads"
+      ],
+      "score": 0.4,
+      "latency_ms": 544.8042909847572,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_20",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_20",
+      "model_response": "solar panels  \nspace station power  \nsolar calculators",
+      "parsed_answer": [
+        "solar panels",
+        "space station power",
+        "solar calculators"
+      ],
+      "expected_answer": [
+        "solar panels",
+        "space station power",
+        "solar calculators"
+      ],
+      "score": 1.0,
+      "latency_ms": 452.21816695993766,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_07",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_07",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 440.59879099950194,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_08",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_08",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 512.9573340527713,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_20",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_20",
+      "model_response": "- Solar panels\n- Space station power\n- Solar calculators\n- Wind turbines\n- Hydroelectric dams",
+      "parsed_answer": [
+        "Solar panels",
+        "Space station power",
+        "Solar calculators",
+        "Wind turbines",
+        "Hydroelectric dams"
+      ],
+      "expected_answer": [
+        "solar calculators"
+      ],
+      "score": 0.33333333333333337,
+      "latency_ms": 784.5484170247801,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_21",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_21",
+      "model_response": "- Newspapers\n- The Protestant Reformation\n- Mass literacy\n- The Scientific Revolution",
+      "parsed_answer": [
+        "Newspapers",
+        "The Protestant Reformation",
+        "Mass literacy",
+        "The Scientific Revolution"
+      ],
+      "expected_answer": [
+        "newspapers",
+        "the Protestant Reformation",
+        "mass literacy",
+        "the Scientific Revolution"
+      ],
+      "score": 1.0,
+      "latency_ms": 516.427583002951,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_08",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_08",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 778.1643749913201,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_21",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_21",
+      "model_response": "- Newspapers\n- The Protestant Reformation\n- Mass literacy\n- Handwritten manuscripts\n- The Scientific Revolution",
+      "parsed_answer": [
+        "Newspapers",
+        "The Protestant Reformation",
+        "Mass literacy",
+        "Handwritten manuscripts",
+        "The Scientific Revolution"
+      ],
+      "expected_answer": [
+        "newspapers"
+      ],
+      "score": 0.33333333333333337,
+      "latency_ms": 733.1332500325516,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_09",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_09",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 555.4501250153407,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_22",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_22",
+      "model_response": "books  \nprinting press  \nnewspapers  \norigami",
+      "parsed_answer": [
+        "books",
+        "printing press",
+        "newspapers",
+        "origami"
+      ],
+      "expected_answer": [
+        "books",
+        "printing press",
+        "newspapers",
+        "origami"
+      ],
+      "score": 1.0,
+      "latency_ms": 555.1736659836024,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_09",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_09",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 568.5655829729512,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_22",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_22",
+      "model_response": "- Books\n- Papyrus scrolls\n- Printing press\n- Newspapers\n- Origami",
+      "parsed_answer": [
+        "Books",
+        "Papyrus scrolls",
+        "Printing press",
+        "Newspapers",
+        "Origami"
+      ],
+      "expected_answer": [
+        "origami"
+      ],
+      "score": 0.33333333333333337,
+      "latency_ms": 552.8658329858445,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_10",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_10",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 504.52820799546316,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_10",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_10",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "No",
+      "score": 0.0,
+      "latency_ms": 548.5946249682456,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_23",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_23",
+      "model_response": "telephone  \nstock tickers  \nnews wire services  \nMorse code",
+      "parsed_answer": [
+        "telephone",
+        "stock tickers",
+        "news wire services",
+        "Morse code"
+      ],
+      "expected_answer": [
+        "telephone",
+        "stock tickers",
+        "news wire services",
+        "Morse code"
+      ],
+      "score": 1.0,
+      "latency_ms": 552.9788329731673,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_11",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_11",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 469.7805839823559,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_11",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_11",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 777.9210000298917,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_24",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_24",
+      "model_response": "fiber optic communication  \nCD/DVD players  \nlaser surgery  \nbarcode scanners  \nlaser printers",
+      "parsed_answer": [
+        "fiber optic communication",
+        "CD/DVD players",
+        "laser surgery",
+        "barcode scanners",
+        "laser printers"
+      ],
+      "expected_answer": [
+        "fiber optic communication",
+        "CD/DVD players",
+        "laser surgery",
+        "barcode scanners",
+        "laser printers"
+      ],
+      "score": 1.0,
+      "latency_ms": 854.865915956907,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_24",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_24",
+      "model_response": "fiber optic communication  \nCD/DVD players  \nlaser surgery  \nbarcode scanners  \nlaser printers",
+      "parsed_answer": [
+        "fiber optic communication",
+        "CD/DVD players",
+        "laser surgery",
+        "barcode scanners",
+        "laser printers"
+      ],
+      "expected_answer": [
+        "fiber optic communication"
+      ],
+      "score": 0.33333333333333337,
+      "latency_ms": 673.3860829845071,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_23",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_23",
+      "model_response": "- Telephone\n- Stock tickers\n- News wire services\n- Morse code",
+      "parsed_answer": [
+        "Telephone",
+        "Stock tickers",
+        "News wire services",
+        "Morse code"
+      ],
+      "expected_answer": [
+        "Morse code",
+        "stock tickers"
+      ],
+      "score": 0.6666666666666666,
+      "latency_ms": 1218.4310000156984,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_12",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_12",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 528.1598329893313,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_25",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_25",
+      "model_response": "hard drives  \ncassette tapes  \ncredit card strips  \nfloppy disks",
+      "parsed_answer": [
+        "hard drives",
+        "cassette tapes",
+        "credit card strips",
+        "floppy disks"
+      ],
+      "expected_answer": [
+        "hard drives",
+        "cassette tapes",
+        "credit card strips",
+        "floppy disks"
+      ],
+      "score": 1.0,
+      "latency_ms": 519.3164579686709,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_25",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_25",
+      "model_response": "- Hard drives\n- Cassette tapes\n- Floppy disks",
+      "parsed_answer": [
+        "Hard drives",
+        "Cassette tapes",
+        "Floppy disks"
+      ],
+      "expected_answer": [
+        "cassette tapes",
+        "credit card strips"
+      ],
+      "score": 0.4,
+      "latency_ms": 449.756583024282,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_13",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_13",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 448.050000006333,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_12",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_12",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 673.2434169971384,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_13",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_13",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "Yes",
+      "score": 0.0,
+      "latency_ms": 433.41145903104916,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_26",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_26",
+      "model_response": "cell theory  \ngerm theory  \nantibiotics  \nmicrobiology",
+      "parsed_answer": [
+        "cell theory",
+        "germ theory",
+        "antibiotics",
+        "microbiology"
+      ],
+      "expected_answer": [
+        "cell theory",
+        "germ theory",
+        "antibiotics",
+        "microbiology"
+      ],
+      "score": 1.0,
+      "latency_ms": 584.1247499920428,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_26",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_26",
+      "model_response": "cell theory  \ngerm theory  \nantibiotics  \nmicrobiology",
+      "parsed_answer": [
+        "cell theory",
+        "germ theory",
+        "antibiotics",
+        "microbiology"
+      ],
+      "expected_answer": [
+        "germ theory"
+      ],
+      "score": 0.4,
+      "latency_ms": 503.0751670128666,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_14",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_14",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 596.4853340410627,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_27",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_27",
+      "model_response": "- Genetic engineering\n- PCR\n- Forensic DNA analysis\n- Gene therapy\n- Evolutionary theory",
+      "parsed_answer": [
+        "Genetic engineering",
+        "PCR",
+        "Forensic DNA analysis",
+        "Gene therapy",
+        "Evolutionary theory"
+      ],
+      "expected_answer": [
+        "genetic engineering",
+        "PCR",
+        "forensic DNA analysis",
+        "gene therapy"
+      ],
+      "score": 0.888888888888889,
+      "latency_ms": 531.9577920017764,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_14",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_14",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 533.2626670133322,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_27",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_27",
+      "model_response": "genetic engineering  \nPCR  \nforensic DNA analysis  \ngene therapy  \nevolutionary theory",
+      "parsed_answer": [
+        "genetic engineering",
+        "PCR",
+        "forensic DNA analysis",
+        "gene therapy",
+        "evolutionary theory"
+      ],
+      "expected_answer": [
+        "PCR",
+        "forensic DNA analysis"
+      ],
+      "score": 0.5714285714285715,
+      "latency_ms": 506.98591698892415,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_15",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_15",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 495.44608301948756,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_28",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_28",
+      "model_response": "- Smallpox eradication\n- Polio elimination\n- Herd immunity concept",
+      "parsed_answer": [
+        "Smallpox eradication",
+        "Polio elimination",
+        "Herd immunity concept"
+      ],
+      "expected_answer": [
+        "smallpox eradication",
+        "polio elimination",
+        "herd immunity concept"
+      ],
+      "score": 1.0,
+      "latency_ms": 502.0755840232596,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_15",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_15",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 445.6424160161987,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_16",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_16",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 508.93166702007875,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_29",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_29",
+      "model_response": "modern surgery  \ndentistry  \nchildbirth practices  \nemergency medicine",
+      "parsed_answer": [
+        "modern surgery",
+        "dentistry",
+        "childbirth practices",
+        "emergency medicine"
+      ],
+      "expected_answer": [
+        "modern surgery",
+        "dentistry",
+        "childbirth practices",
+        "emergency medicine"
+      ],
+      "score": 1.0,
+      "latency_ms": 510.58133295737207,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_16",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_16",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 437.5427920022048,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_28",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_28",
+      "model_response": "- Smallpox eradication\n- Polio elimination\n- Herd immunity concept",
+      "parsed_answer": [
+        "Smallpox eradication",
+        "Polio elimination",
+        "Herd immunity concept"
+      ],
+      "expected_answer": [
+        "herd immunity concept"
+      ],
+      "score": 0.5,
+      "latency_ms": 623.9423750084825,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_29",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_29",
+      "model_response": "- Modern surgery\n- Dentistry\n- Childbirth practices\n- Emergency medicine",
+      "parsed_answer": [
+        "Modern surgery",
+        "Dentistry",
+        "Childbirth practices",
+        "Emergency medicine"
+      ],
+      "expected_answer": [
+        "emergency medicine"
+      ],
+      "score": 0.4,
+      "latency_ms": 538.938625017181,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_17",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_17",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 484.7538329777308,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_17",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_17",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 450.0528330099769,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_30",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_30",
+      "model_response": "- Antibiotics as a class\n- Surgical infection control\n- Organ transplants",
+      "parsed_answer": [
+        "Antibiotics as a class",
+        "Surgical infection control",
+        "Organ transplants"
+      ],
+      "expected_answer": [
+        "antibiotics as a class",
+        "surgical infection control",
+        "organ transplants"
+      ],
+      "score": 1.0,
+      "latency_ms": 493.39604197302833,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_30",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_30",
+      "model_response": "antibiotics as a class  \nsurgical infection control  \norgan transplants",
+      "parsed_answer": [
+        "antibiotics as a class",
+        "surgical infection control",
+        "organ transplants"
+      ],
+      "expected_answer": [
+        "organ transplants"
+      ],
+      "score": 0.5,
+      "latency_ms": 542.2336250194348,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_18",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_18",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 390.52462502149865,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_31",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_31",
+      "model_response": "automobiles  \nairplanes  \nships  \ntrains",
+      "parsed_answer": [
+        "automobiles",
+        "airplanes",
+        "ships",
+        "trains"
+      ],
+      "expected_answer": [
+        "automobiles",
+        "airplanes"
+      ],
+      "score": 0.6666666666666666,
+      "latency_ms": 536.6360840271227,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_18",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_18",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 508.54654097929597,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_19",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_19",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 463.10204098699614,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_31",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_31",
+      "model_response": "- Automobiles\n- Airplanes\n- Ships\n- Electric vehicles\n- Trains",
+      "parsed_answer": [
+        "Automobiles",
+        "Airplanes",
+        "Ships",
+        "Electric vehicles",
+        "Trains"
+      ],
+      "expected_answer": [
+        "airplanes"
+      ],
+      "score": 0.33333333333333337,
+      "latency_ms": 587.0861670118757,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_32",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_32",
+      "model_response": "- Tires\n- Rubber bands\n- Waterproof clothing\n- Conveyor belts\n- Electrical insulation",
+      "parsed_answer": [
+        "Tires",
+        "Rubber bands",
+        "Waterproof clothing",
+        "Conveyor belts",
+        "Electrical insulation"
+      ],
+      "expected_answer": [
+        "tires",
+        "rubber bands",
+        "waterproof clothing",
+        "conveyor belts",
+        "electrical insulation"
+      ],
+      "score": 1.0,
+      "latency_ms": 525.8234160137363,
+      "error": null
+    },
+    {
+      "question_id": "gate_cf_19",
+      "question_type": "GATE",
+      "variant": "counterfactual",
+      "pair_id": "gate_19",
+      "model_response": "Yes.",
+      "parsed_answer": "Yes",
+      "expected_answer": "Yes",
+      "score": 1.0,
+      "latency_ms": 403.08579202974215,
+      "error": null
+    },
+    {
+      "question_id": "gate_f_20",
+      "question_type": "GATE",
+      "variant": "factual",
+      "pair_id": "gate_20",
+      "model_response": "No.",
+      "parsed_answer": "No",
+      "expected_answer": "No",
+      "score": 1.0,
+      "latency_ms": 471.80175001267344,
+      "error": null
+    },
+    {
+      "question_id": "ripple_f_33",
+      "question_type": "RIPPLE",
+      "variant": "factual",
+      "pair_id": "ripple_33",
+      "model_response": "ocean navigation  \ncartography  \naviation  \nsurveying",
+      "parsed_answer": [
+        "ocean navigation",
+        "cartography",
+        "aviation",
+        "surveying"
+      ],
+      "expected_answer": [
+        "ocean navigation",
+        "cartography",
+        "surveying"
+      ],
+      "score": 0.8571428571428571,
+      "latency_ms": 427.7316659572534,
+      "error": null
+    },
+    {
+      "question_id": "ripple_cf_32",
+      "question_type": "RIPPLE",
+      "variant": "counterfactual",
+      "pair_id": "ripple_32",
+      "model_response": "- Tires\n- Rubber bands\n- Waterproof clothing\n- Plastic\n- Conveyor belts\n- Electrical insulation",
+      "parsed_answer": [
+        "Tires",
+        "Rubber bands",
+        "Waterproof clothing",
+        "Plastic",
+        "Conveyor belts",
+        "Electrical insulation"
+      ],
+      "expected_answer": [
+        "rubber bands"
+      ],
+      "score": 0.2857142857142857,
+      "latency_ms": 556.780000042636,
+      "error": null
+    }
+  ],
+  "type_scores": [
+    {
+      "question_type": "CHAIN",
+      "factual_score": 0.9525,
+      "counterfactual_score": 0.695,
+      "reasoning_gap": 0.25750000000000006,
+      "epoch_score": 0.798,
+      "n_pairs": 40,
+      "std_dev": 0.22348291967086742,
+      "median_score": 0.88,
+      "ci_lower": 0.7265266948416068,
+      "ci_upper": 0.8694733051583933
+    },
+    {
+      "question_type": "GATE",
+      "factual_score": 0.92,
+      "counterfactual_score": 0.88,
+      "reasoning_gap": 0.040000000000000036,
+      "epoch_score": 0.8960000000000001,
+      "n_pairs": 50,
+      "std_dev": 0.23643612417802515,
+      "median_score": 1.0,
+      "ci_lower": 0.8288055969830075,
+      "ci_upper": 0.9631944030169928
+    },
+    {
+      "question_type": "RIPPLE",
+      "factual_score": 0.9269642857142857,
+      "counterfactual_score": 0.4002380952380952,
+      "reasoning_gap": 0.5267261904761904,
+      "epoch_score": 0.6109285714285714,
+      "n_pairs": 40,
+      "std_dev": 0.1911296062550045,
+      "median_score": 0.6000000000000001,
+      "ci_lower": 0.5498023578781752,
+      "ci_upper": 0.6720547849789675
+    },
+    {
+      "question_type": "BRIDGE",
+      "factual_score": 0.85,
+      "counterfactual_score": 0.65,
+      "reasoning_gap": 0.19999999999999996,
+      "epoch_score": 0.73,
+      "n_pairs": 40,
+      "std_dev": 0.34058772731852804,
+      "median_score": 1.0,
+      "ci_lower": 0.6210747604170752,
+      "ci_upper": 0.8389252395829248
+    }
+  ],
+  "overall_factual": 0.9123660714285714,
+  "overall_counterfactual": 0.6563095238095238,
+  "overall_reasoning_gap": 0.2560565476190476,
+  "overall_epoch_score": 0.7587321428571429,
+  "evaluation_duration_seconds": 40.59,
+  "total_questions": 340,
+  "failed_questions": 0
+}

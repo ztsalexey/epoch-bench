@@ -10,26 +10,25 @@ A benchmark for testing LLM causal reasoning about technology dependencies. Ever
 
 | # | Model | EPOCH | Factual | CF | Gap |
 |---|-------|------:|--------:|---:|----:|
-| 1 | **claude-sonnet-4-6** | **76.9%** | 87.0% | **70.1%** | 16.8% |
-| 2 | claude-opus-4-6 | 76.6% | **90.7%** | 67.2% | 23.5% |
-| 3 | o3-mini | 74.4% | 88.5% | 65.0% | 23.5% |
-| 4 | gpt-4.1-mini | 74.1% | 83.4% | 68.0% | **15.5%** |
-| 5 | o4-mini | 73.9% | 86.2% | 65.7% | 20.5% |
-| 6 | gpt-4.1 | 73.5% | 89.1% | 63.1% | 26.0% |
-| 7 | gpt-4o | 72.8% | 90.3% | 61.0% | 29.3% |
-| 8 | gpt-4o-mini | 72.6% | 82.3% | 66.1% | 16.1% |
-| 9 | gpt-4-turbo | 71.5% | 88.5% | 60.1% | 28.3% |
-| 10 | claude-haiku-4.5 | 69.7% | 87.4% | 58.0% | 29.4% |
-| 11 | gpt-4.1-nano | 67.4% | 81.5% | 58.1% | 23.4% |
-| 12 | gpt-3.5-turbo | 61.1% | 79.4% | 49.0% | 30.4% |
+| 1 | **claude-sonnet-4-6** | **78.7%** | 87.6% | **72.7%** | **14.8%** |
+| 2 | claude-opus-4-6 | 78.1% | **91.1%** | 69.5% | 21.6% |
+| 3 | o4-mini | 76.3% | 89.4% | 67.6% | 21.8% |
+| 4 | gpt-4o | 75.9% | 91.2% | 65.6% | 25.6% |
+| 5 | gpt-4.1 | 75.6% | 88.6% | 66.9% | 21.7% |
+| 6 | gpt-4.1-mini | 74.9% | 85.3% | 68.0% | 17.4% |
+| 7 | gpt-4-turbo | 74.8% | 89.5% | 65.0% | 24.5% |
+| 8 | gpt-4o-mini | 73.6% | 83.3% | 67.2% | 16.1% |
+| 9 | o3-mini | 72.6% | 85.1% | 64.3% | 20.8% |
+| 10 | claude-haiku-4.5 | 72.4% | 87.3% | 62.4% | 24.9% |
+| 11 | gpt-4.1-nano | 68.5% | 82.5% | 59.1% | 23.4% |
+| 12 | gpt-3.5-turbo | 62.7% | 79.8% | 51.3% | 28.5% |
 
 ### Key Findings
 
-- **Factual score != reasoning ability.** GPT-4o has the highest factual score (90.3%) but ranks 7th overall — its counterfactual reasoning collapses.
-- **Scaling does not significantly close the gap** (slope=-0.004, p=0.44). Bigger models memorize more but don't proportionally reason better.
-- **GATE and BRIDGE show genuine counterfactual reasoning.** Models massively outperform a "copy factual answer" baseline on these types (+72% and +62% margins). But on CHAIN and RIPPLE, models fail to beat the baseline — their CF answers are no better than just repeating factual knowledge.
-- **Mini models punch above their weight.** gpt-4.1-mini and gpt-4o-mini have the smallest gaps (~16%) — less memorization means more genuine reasoning.
-- **Difficulty-adjusted contamination** separates memorization from inherent difficulty. After adjustment, gpt-3.5-turbo shows the strongest contamination signal (0.173), while gpt-4.1-mini is cleanest (0.035).
+- **Factual score != reasoning ability.** GPT-4o and Opus have the highest factual scores (~91%) but rank below Sonnet overall — Sonnet wins by having the best counterfactual reasoning (72.7%) and smallest gap (14.8%).
+- **Scaling does not significantly close the gap** (slope=-0.003, p=0.63). Bigger models memorize more but don't proportionally reason better.
+- **CHAIN, GATE, and BRIDGE show genuine counterfactual reasoning.** Models massively outperform a "copy factual answer" baseline on these types (+49%, +56%, +62% margins). Only RIPPLE CF scores remain below the baseline — models list factual-world answers instead of reasoning about the alternative.
+- **Mini models punch above their weight.** Sonnet (14.8%), gpt-4o-mini (16.1%), and gpt-4.1-mini (17.4%) have the smallest gaps — less memorization means more genuine reasoning.
 
 ![Reasoning Gap](figures/reasoning_gap.png)
 
@@ -51,11 +50,11 @@ A high Reasoning Gap means the model scores well on real-world facts but poorly 
 
 ### Scoring Notes and Known Limitations
 
-**Copy-factual baseline:** We compare model CF scores against a naive strategy that copies the factual answer to CF questions. Models genuinely reason on GATE (+72% margin) and BRIDGE (+62%), but CHAIN and RIPPLE CF scores don't beat this baseline — indicating those CF components primarily reflect factual knowledge leaking through rather than counterfactual reasoning. This is an active area of improvement.
+**Copy-factual baseline:** We compare model CF scores against a naive strategy that copies the factual answer to CF questions. Models genuinely reason on CHAIN (+49%), GATE (+56%), and BRIDGE (+62%). Only RIPPLE CF doesn't beat the baseline — models over-predict by listing factual-world answers instead of reasoning about the counterfactual scenario.
 
 **RIPPLE F1 asymmetry:** CF RIPPLE answers average 1.4 items vs 3.5 for factual. Models over-predict (listing factual-world answers instead of reasoning about the alternative), resulting in low precision.
 
-**GATE flip pattern:** 72% of GATE pairs flip the answer between variants (reduced from 90% with the addition of 10 non-flipping pairs). Models show nuanced patterns — 7 of 12 score better on CF GATE, suggesting the alternative-world framing genuinely aids prerequisite reasoning.
+**GATE flip pattern:** 68% of GATE pairs flip the answer between variants (16 of 50 pairs are non-flipping). Models show nuanced patterns — 7 of 12 score better on CF GATE, suggesting the alternative-world framing genuinely aids prerequisite reasoning.
 
 ## Setup
 
