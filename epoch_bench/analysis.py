@@ -317,6 +317,68 @@ class BaselineComparison:
     margin: float  # model_cf - baseline_cf
 
 
+@dataclass
+class RippleDiagnostic:
+    """Precision/recall breakdown for RIPPLE scoring."""
+
+    variant: str
+    mean_precision: float
+    mean_recall: float
+    mean_f1: float
+    mean_predicted_len: float
+    mean_expected_len: float
+    n: int
+
+
+def ripple_diagnostic(
+    result: BenchmarkResult,
+    questions: list[Question],
+) -> list[RippleDiagnostic]:
+    """Diagnose RIPPLE over/under-prediction by variant."""
+    from epoch_bench.evaluate import _normalize_tech
+
+    q_map = {q.id: q for q in questions}
+
+    by_variant: dict[str, list[dict]] = defaultdict(list)
+    for r in result.results:
+        if r.question_type.value != "RIPPLE" or r.error:
+            continue
+        q = q_map.get(r.question_id)
+        if not q:
+            continue
+        predicted = r.parsed_answer if isinstance(r.parsed_answer, list) else [r.parsed_answer]
+        expected = q.answer if isinstance(q.answer, list) else [q.answer]
+        pred_set = {_normalize_tech(s) for s in predicted}
+        exp_set = {_normalize_tech(s) for s in expected}
+        tp = len(pred_set & exp_set)
+        precision = tp / len(pred_set) if pred_set else 0.0
+        recall = tp / len(exp_set) if exp_set else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+        by_variant[r.variant].append({
+            "precision": precision,
+            "recall": recall,
+            "f1": f1,
+            "pred_len": len(predicted),
+            "exp_len": len(expected),
+        })
+
+    diagnostics = []
+    for variant in ["factual", "counterfactual"]:
+        entries = by_variant.get(variant, [])
+        if not entries:
+            continue
+        diagnostics.append(RippleDiagnostic(
+            variant=variant,
+            mean_precision=mean(e["precision"] for e in entries),
+            mean_recall=mean(e["recall"] for e in entries),
+            mean_f1=mean(e["f1"] for e in entries),
+            mean_predicted_len=mean(e["pred_len"] for e in entries),
+            mean_expected_len=mean(e["exp_len"] for e in entries),
+            n=len(entries),
+        ))
+    return diagnostics
+
+
 def copy_factual_baseline(
     result: BenchmarkResult,
     questions: list[Question],

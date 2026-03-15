@@ -135,6 +135,7 @@ def analyze(result_files: tuple[str, ...], output: str | None, latex: bool) -> N
         domain_stratified,
         gap_significance,
         item_discrimination,
+        ripple_diagnostic,
         weight_sensitivity,
     )
 
@@ -160,6 +161,13 @@ def analyze(result_files: tuple[str, ...], output: str | None, latex: bool) -> N
     for b in baselines:
         marker = "beats baseline" if b.model_beats_baseline else "BELOW baseline"
         click.echo(f"  {b.question_type}: model CF={b.model_cf_score:.1%} vs baseline={b.baseline_cf_score:.1%} ({marker})")
+
+    # RIPPLE diagnostic (first result)
+    diag = ripple_diagnostic(results[0], questions)
+    analysis["ripple_diagnostic"] = [asdict(d) for d in diag]
+    click.echo("\nRIPPLE precision/recall (first model):")
+    for d in diag:
+        click.echo(f"  {d.variant}: P={d.mean_precision:.1%} R={d.mean_recall:.1%} F1={d.mean_f1:.1%} (pred_len={d.mean_predicted_len:.1f} exp_len={d.mean_expected_len:.1f})")
 
     # Difficulty and domain stratification (first result)
     ds = difficulty_stratified(results[0], questions)

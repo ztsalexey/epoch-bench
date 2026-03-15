@@ -10,25 +10,25 @@ A benchmark for testing LLM causal reasoning about technology dependencies. Ever
 
 | # | Model | EPOCH | Factual | CF | Gap |
 |---|-------|------:|--------:|---:|----:|
-| 1 | **claude-sonnet-4-6** | **78.7%** | 87.6% | **72.7%** | **14.8%** |
-| 2 | claude-opus-4-6 | 78.1% | **91.1%** | 69.5% | 21.6% |
-| 3 | o4-mini | 76.3% | 89.4% | 67.6% | 21.8% |
-| 4 | gpt-4o | 75.9% | 91.2% | 65.6% | 25.6% |
-| 5 | gpt-4.1 | 75.6% | 88.6% | 66.9% | 21.7% |
-| 6 | gpt-4.1-mini | 74.9% | 85.3% | 68.0% | 17.4% |
-| 7 | gpt-4-turbo | 74.8% | 89.5% | 65.0% | 24.5% |
-| 8 | gpt-4o-mini | 73.6% | 83.3% | 67.2% | 16.1% |
-| 9 | o3-mini | 72.6% | 85.1% | 64.3% | 20.8% |
-| 10 | claude-haiku-4.5 | 72.4% | 87.3% | 62.4% | 24.9% |
-| 11 | gpt-4.1-nano | 68.5% | 82.5% | 59.1% | 23.4% |
+| 1 | **claude-sonnet-4-6** | **79.1%** | 87.6% | **73.4%** | **14.2%** |
+| 2 | claude-opus-4-6 | 78.5% | **91.1%** | 70.1% | 21.0% |
+| 3 | o4-mini | 76.7% | 89.4% | 68.2% | 21.2% |
+| 4 | gpt-4o | 76.2% | 91.2% | 66.3% | 25.0% |
+| 5 | gpt-4.1 | 76.0% | 88.6% | 67.5% | 21.1% |
+| 6 | gpt-4.1-mini | 75.3% | 85.3% | 68.6% | 16.7% |
+| 7 | gpt-4-turbo | 75.2% | 89.5% | 65.6% | 23.9% |
+| 8 | gpt-4o-mini | 74.0% | 83.3% | 67.8% | **15.5%** |
+| 9 | o3-mini | 73.0% | 85.1% | 64.9% | 20.2% |
+| 10 | claude-haiku-4.5 | 72.7% | 87.3% | 63.0% | 24.3% |
+| 11 | gpt-4.1-nano | 68.8% | 82.5% | 59.7% | 22.8% |
 | 12 | gpt-3.5-turbo | 62.7% | 79.8% | 51.3% | 28.5% |
 
 ### Key Findings
 
-- **Factual score != reasoning ability.** GPT-4o and Opus have the highest factual scores (~91%) but rank below Sonnet overall — Sonnet wins by having the best counterfactual reasoning (72.7%) and smallest gap (14.8%).
+- **Factual score != reasoning ability.** GPT-4o and Opus have the highest factual scores (~91%) but rank below Sonnet — Sonnet wins by having the best counterfactual reasoning (73.4%) and smallest gap (14.2%).
 - **Scaling does not significantly close the gap** (slope=-0.003, p=0.63). Bigger models memorize more but don't proportionally reason better.
-- **CHAIN, GATE, and BRIDGE show genuine counterfactual reasoning.** Models outperform a "copy factual answer" baseline on these types (+37%, +47%, +58% margins averaged across models). Only RIPPLE CF scores remain below the baseline — models list factual-world answers instead of reasoning about the alternative.
-- **Mini models punch above their weight.** Sonnet (14.8%), gpt-4o-mini (16.1%), and gpt-4.1-mini (17.4%) have the smallest gaps — less memorization means more genuine reasoning.
+- **CHAIN, GATE, and BRIDGE show genuine counterfactual reasoning.** Models outperform a "copy factual answer" baseline on these types (+37%, +47%, +58% margins averaged across models). RIPPLE remains the unsolved challenge — models over-predict (high recall ~70%, low precision ~30%) by listing factual-world answers instead of reasoning about the alternative.
+- **Mini models punch above their weight.** Sonnet (14.2%), gpt-4o-mini (15.5%), and gpt-4.1-mini (16.7%) have the smallest gaps — less memorization means more genuine reasoning.
 
 ![Reasoning Gap](figures/reasoning_gap.png)
 
@@ -104,7 +104,11 @@ epoch-bench figures results/*.json --output-dir figures/
 - `ripple.jsonl` — 40 pairs (80 questions)
 - `bridge.jsonl` — 40 pairs (80 questions)
 
+Additionally, `generated.jsonl` contains procedurally generated question pairs from the technology dependency graph, expanding the dataset for unsaturable evaluation.
+
 Questions are split into **open** (260, published) and **closed** (80, held back) test sets to prevent future training contamination. Use `--split open` to run only the public set.
+
+See [VALIDATION.md](VALIDATION.md) for the full question validation methodology.
 
 ## Novel Features
 

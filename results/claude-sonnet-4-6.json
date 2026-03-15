@@ -332,8 +332,8 @@
       "pair_id": "bridge_27",
       "model_response": "B",
       "parsed_answer": "B",
-      "expected_answer": "C",
-      "score": 0.0,
+      "expected_answer": "B",
+      "score": 1.0,
       "latency_ms": 1267.3175410018303,
       "error": null
     },
@@ -5727,20 +5727,20 @@
     {
       "question_type": "BRIDGE",
       "factual_score": 0.725,
-      "counterfactual_score": 0.7,
-      "reasoning_gap": 0.025000000000000022,
-      "epoch_score": 0.71,
+      "counterfactual_score": 0.725,
+      "reasoning_gap": 0.0,
+      "epoch_score": 0.725,
       "n_pairs": 40,
-      "std_dev": 0.34477789208676773,
+      "std_dev": 0.34399612400917157,
       "median_score": 1.0,
-      "ci_lower": 0.5997346807117205,
-      "ci_upper": 0.8202653192882794
+      "ci_lower": 0.6149847022724528,
+      "ci_upper": 0.8350152977275471
     }
   ],
   "overall_factual": 0.8756994047619048,
-  "overall_counterfactual": 0.7274702380952381,
-  "overall_reasoning_gap": 0.14822916666666663,
-  "overall_epoch_score": 0.7867619047619048,
+  "overall_counterfactual": 0.7337202380952381,
+  "overall_reasoning_gap": 0.14197916666666666,
+  "overall_epoch_score": 0.7905119047619048,
   "evaluation_duration_seconds": 354.35,
   "total_questions": 340,
   "failed_questions": 1
