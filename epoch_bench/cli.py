@@ -635,8 +635,8 @@ def robustness(result_file: str, provider: str, model: str, concurrency: int, ou
                     from epoch_bench.prompts import format_prompt
                     system_prompt, _ = format_prompt(pq.original)
                     raw = await model_provider.generate(system_prompt, pq.paraphrased_prompt)
-                    from epoch_bench.runner import _parse_response
-                    parsed = _parse_response(raw, pq.original.type)
+                    from epoch_bench.runner import parse_response
+                    parsed = parse_response(pq.original.type, raw)
                     from epoch_bench.evaluate import score_question
                     score = score_question(pq.original.type.value, parsed, pq.original.answer)
                 except Exception:

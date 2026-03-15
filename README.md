@@ -27,7 +27,7 @@ A benchmark for testing LLM causal reasoning about technology dependencies. Ever
 
 - **Factual score != reasoning ability.** GPT-4o and Opus have the highest factual scores (~91%) but rank below Sonnet overall — Sonnet wins by having the best counterfactual reasoning (72.7%) and smallest gap (14.8%).
 - **Scaling does not significantly close the gap** (slope=-0.003, p=0.63). Bigger models memorize more but don't proportionally reason better.
-- **CHAIN, GATE, and BRIDGE show genuine counterfactual reasoning.** Models massively outperform a "copy factual answer" baseline on these types (+49%, +56%, +62% margins). Only RIPPLE CF scores remain below the baseline — models list factual-world answers instead of reasoning about the alternative.
+- **CHAIN, GATE, and BRIDGE show genuine counterfactual reasoning.** Models outperform a "copy factual answer" baseline on these types (+37%, +47%, +58% margins averaged across models). Only RIPPLE CF scores remain below the baseline — models list factual-world answers instead of reasoning about the alternative.
 - **Mini models punch above their weight.** Sonnet (14.8%), gpt-4o-mini (16.1%), and gpt-4.1-mini (17.4%) have the smallest gaps — less memorization means more genuine reasoning.
 
 ![Reasoning Gap](figures/reasoning_gap.png)
@@ -50,11 +50,11 @@ A high Reasoning Gap means the model scores well on real-world facts but poorly 
 
 ### Scoring Notes and Known Limitations
 
-**Copy-factual baseline:** We compare model CF scores against a naive strategy that copies the factual answer to CF questions. Models genuinely reason on CHAIN (+49%), GATE (+56%), and BRIDGE (+62%). Only RIPPLE CF doesn't beat the baseline — models over-predict by listing factual-world answers instead of reasoning about the counterfactual scenario.
+**Copy-factual baseline:** We compare model CF scores against a naive strategy that copies the factual answer to CF questions. Models genuinely reason on CHAIN (+37% margin), GATE (+47%), and BRIDGE (+58%). Only RIPPLE CF doesn't beat the baseline — models over-predict by listing factual-world answers instead of reasoning about the counterfactual scenario.
 
 **RIPPLE F1 asymmetry:** CF RIPPLE answers average 1.4 items vs 3.5 for factual. Models over-predict (listing factual-world answers instead of reasoning about the alternative), resulting in low precision.
 
-**GATE flip pattern:** 68% of GATE pairs flip the answer between variants (16 of 50 pairs are non-flipping). Models show nuanced patterns — 7 of 12 score better on CF GATE, suggesting the alternative-world framing genuinely aids prerequisite reasoning.
+**GATE flip pattern:** 68% of GATE pairs flip the answer between variants (16 of 50 pairs are non-flipping).
 
 ## Setup
 
@@ -100,7 +100,7 @@ epoch-bench figures results/*.json --output-dir figures/
 340 hand-crafted questions across 4 JSONL files in `epoch_bench/data/`:
 
 - `chain.jsonl` — 40 factual/counterfactual pairs (80 questions, 20 with unique CF item sets)
-- `gate.jsonl` — 50 pairs (100 questions, 14 non-flipping pairs)
+- `gate.jsonl` — 50 pairs (100 questions, 16 non-flipping pairs)
 - `ripple.jsonl` — 40 pairs (80 questions)
 - `bridge.jsonl` — 40 pairs (80 questions)
 
@@ -110,7 +110,7 @@ Questions are split into **open** (260, published) and **closed** (80, held back
 
 ### Technology Dependency Graph
 
-Extracts a directed acyclic graph (~330 nodes, ~287 edges) from the 320 hand-crafted questions, then procedurally generates unlimited new factual/counterfactual question pairs from it.
+Extracts a directed acyclic graph (~330 nodes, ~290 edges) from the 340 hand-crafted questions, then procedurally generates unlimited new factual/counterfactual question pairs from it.
 
 ```bash
 # Build the graph
@@ -144,7 +144,7 @@ epoch-bench scaling results/*.json
 
 ```
 epoch_bench/
-├── cli.py              # CLI entry point (13 commands)
+├── cli.py              # CLI entry point (14 commands)
 ├── schema.py           # Pydantic data models
 ├── evaluate.py         # Scoring logic (Kendall's tau, accuracy, F1)
 ├── analysis.py         # Statistical analysis (gap significance, correlations)
